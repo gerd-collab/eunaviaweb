@@ -22,6 +22,11 @@
 
   --serif: "Fraunces", "Iowan Old Style", Georgia, serif;
   --sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+
+  /* Optische Größe der großen Fraunces-Headlines deckeln. font-optical-sizing:auto
+     würde bei Riesengrößen opsz auf ~90+ treiben — dort schließt Fraunces die
+     Punzen ("e" wird unleserlich). Kleiner = offenere Punzen / mehr Lesbarkeit. */
+  --opsz-display: 36;
 }
 
 /* ---- Dunkel (Primär) ---- */
@@ -113,7 +118,8 @@ body {
 .display {
   font-family: var(--serif); font-weight: 600;
   font-size: clamp(2.3rem, 5.4vw, 4.2rem); line-height: 1.02;
-  letter-spacing: -0.02em; font-optical-sizing: auto;
+  letter-spacing: -0.02em;
+  font-optical-sizing: none; font-variation-settings: "opsz" var(--opsz-display);
 }
 .display em, .cta__title em, .manifest__quote em, .hero__title em, .principles em {
   font-style: italic; font-weight: 500;
@@ -247,7 +253,8 @@ body {
 .hero__title {
   font-family: var(--serif); font-weight: 500;
   font-size: clamp(3rem, 9.5vw, 7.4rem); line-height: 0.98; letter-spacing: -0.035em;
-  font-optical-sizing: auto; margin-bottom: 32px;
+  font-optical-sizing: none; font-variation-settings: "opsz" var(--opsz-display);
+  margin-bottom: 32px;
 }
 .hero__title span { display: block; }
 .hero__title em {
@@ -294,6 +301,7 @@ body {
 .manifest__quote {
   font-family: var(--serif); font-weight: 400;
   font-size: clamp(2rem, 5.2vw, 4rem); line-height: 1.08; letter-spacing: -0.02em;
+  font-optical-sizing: none; font-variation-settings: "opsz" var(--opsz-display);
   max-width: 18ch; margin: 8px 0 56px; text-wrap: balance;
 }
 .manifest__cols {
@@ -360,6 +368,7 @@ body {
 .product__name {
   font-family: var(--serif); font-weight: 600;
   font-size: clamp(2rem, 4.4vw, 3rem); line-height: 1.04; letter-spacing: -0.02em;
+  font-optical-sizing: none; font-variation-settings: "opsz" var(--opsz-display);
   margin-bottom: 20px;
 }
 .product__desc { color: var(--ink-dim); font-size: 1.1rem; line-height: 1.6; margin-bottom: 26px; }
@@ -411,7 +420,7 @@ body {
   background: radial-gradient(80% 120% at 50% 0%, color-mix(in srgb, var(--gold) 16%, transparent), transparent 60%);
 }
 .cta__mark { margin-bottom: 22px; }
-.cta__title { font-family: var(--serif); font-weight: 600; font-size: clamp(2rem, 5vw, 3.2rem); letter-spacing: -0.025em; margin-bottom: 18px; }
+.cta__title { font-family: var(--serif); font-weight: 600; font-size: clamp(2rem, 5vw, 3.2rem); letter-spacing: -0.025em; font-optical-sizing: none; font-variation-settings: "opsz" var(--opsz-display); margin-bottom: 18px; }
 .cta__lead { color: var(--ink-dim); font-size: 1.15rem; margin-bottom: 36px; max-width: 48ch; margin-inline: auto; }
 
 /* ---------- Footer ---------- */
