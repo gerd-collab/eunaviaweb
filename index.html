@@ -7,10 +7,10 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Eunavia – der gute Weg zum gelingenden Leben. Ein menschzentriertes Unternehmen für Bildung und Lebensqualität: druckbare Arbeitsblätter, Fahrerwohl, StopSmoking, Klar und Leben." />
+    <meta name="description" data-i18n-content="meta.desc" content="Eunavia – der gute Weg zum gelingenden Leben. Ein menschzentriertes Unternehmen für Bildung und Lebensqualität: druckbare Arbeitsblätter, Fahrerwohl, StopSmoking, Klar und Leben." />
     <meta name="theme-color" content="#07110D" />
     <meta property="og:title" content="Eunavia – Human Centered" />
-    <meta property="og:description" content="Ein menschzentriertes Unternehmen für Bildung und Lebensqualität. Fünf Produkte, ein Versprechen: Menschen wachsen lassen." />
+    <meta property="og:description" data-i18n-content="meta.ogDesc" content="Ein menschzentriertes Unternehmen für Bildung und Lebensqualität. Fünf Produkte, ein Versprechen: Menschen wachsen lassen." />
     <meta property="og:type" content="website" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,7 +20,7 @@
     <title>Eunavia – Human Centered</title>
   </head>
   <body>
-    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+    <a class="skip-link" href="#main" data-i18n="skip">Zum Inhalt springen</a>
 
     <!-- Atmosphäre: driftende Aurora + Grain -->
     <div class="aurora" aria-hidden="true">
@@ -40,16 +40,16 @@
           </span>
         </a>
         <nav class="nav__links" aria-label="Hauptnavigation">
-          <a href="#philosophie">Philosophie</a>
-          <a href="#produkte">Produkte</a>
-          <a href="#prinzipien">Prinzipien</a>
-          <a href="#kontakt">Kontakt</a>
+          <a href="#philosophie" data-i18n="nav.philosophy">Philosophie</a>
+          <a href="#produkte" data-i18n="nav.products">Produkte</a>
+          <a href="#prinzipien" data-i18n="nav.principles">Prinzipien</a>
+          <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
         </nav>
         <div class="nav__actions">
-          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Hell-/Dunkelmodus umschalten" title="Hell-/Dunkelmodus">
+          <button class="theme-toggle" id="themeToggle" type="button" data-i18n-label="theme.label" aria-label="Hell-/Dunkelmodus umschalten" data-i18n-title="theme.title" title="Hell-/Dunkelmodus">
             <span class="theme-toggle__icon" aria-hidden="true"></span>
           </button>
-          <a class="btn btn--gold nav__cta" href="#kontakt">Gespräch anfragen</a>
+          <a class="btn btn--gold nav__cta" href="#kontakt" data-i18n="nav.cta">Gespräch anfragen</a>
         </div>
       </div>
     </header>
@@ -63,34 +63,34 @@
         <div class="hero__scrim" aria-hidden="true"></div>
 
         <div class="container hero__inner">
-          <p class="hero__kicker stagger" data-d="1">
+          <p class="hero__kicker stagger" data-d="1" data-i18n="hero.kicker">
             <span class="hero__kicker-rule"></span>
             Bildung &amp; Lebensqualität · weltweit
           </p>
           <h1 class="hero__title">
-            <span class="stagger" data-d="2">Der gute Weg</span>
-            <span class="stagger" data-d="3">zum <em>gelingenden</em></span>
-            <span class="stagger" data-d="4">Leben.</span>
+            <span class="stagger" data-d="2" data-i18n="hero.t1">Der gute Weg</span>
+            <span class="stagger" data-d="3" data-i18n="hero.t2">zum <em>gelingenden</em></span>
+            <span class="stagger" data-d="4" data-i18n="hero.t3">Leben.</span>
           </h1>
-          <p class="hero__lead stagger" data-d="5">
+          <p class="hero__lead stagger" data-d="5" data-i18n="hero.lead">
             Eunavia ist ein menschzentriertes Unternehmen für Entwicklung über die
             ganze Lebensspanne — vom Lernen der Kinder bis zur Lebensqualität
             Erwachsener. Eine Familie aus Software, ein Versprechen.
           </p>
           <div class="hero__actions stagger" data-d="6">
-            <a class="btn btn--gold btn--lg" href="#produkte">Die Produkte erleben</a>
-            <a class="btn btn--ghost btn--lg" href="#philosophie">Was uns antreibt</a>
+            <a class="btn btn--gold btn--lg" href="#produkte" data-i18n="hero.ctaPrimary">Die Produkte erleben</a>
+            <a class="btn btn--ghost btn--lg" href="#philosophie" data-i18n="hero.ctaSecondary">Was uns antreibt</a>
           </div>
         </div>
 
-        <a class="hero__scroll stagger" data-d="7" href="#manifest" aria-label="Weiter">
+        <a class="hero__scroll stagger" data-d="7" href="#manifest" data-i18n-label="hero.scroll" aria-label="Weiter">
           <span></span>
         </a>
       </section>
 
       <!-- MARQUEE -->
       <div class="marquee" aria-hidden="true">
-        <div class="marquee__track">
+        <div class="marquee__track" data-i18n="marquee">
           <span>Lernen</span><i>✦</i><span>Bewegung</span><i>✦</i><span>Gewohnheiten ändern</span><i>✦</i>
           <span>Suchtfrei werden</span><i>✦</i><span>Quality of Life</span><i>✦</i><span>Prävention</span><i>✦</i>
           <span>Lernen</span><i>✦</i><span>Bewegung</span><i>✦</i><span>Gewohnheiten ändern</span><i>✦</i>
@@ -101,18 +101,18 @@
       <!-- PHILOSOPHIE / MANIFEST -->
       <section class="section manifest" id="philosophie">
         <div class="container">
-          <p class="eyebrow reveal" id="manifest">Philosophie</p>
-          <blockquote class="manifest__quote reveal">
+          <p class="eyebrow reveal" id="manifest" data-i18n="manifest.eyebrow">Philosophie</p>
+          <blockquote class="manifest__quote reveal" data-i18n="manifest.quote">
             Nicht Schule. Nicht Klinik.
             <em>Der Mensch,</em> der besser werden will.
           </blockquote>
           <div class="manifest__cols">
-            <p class="manifest__lead reveal">
+            <p class="manifest__lead reveal" data-i18n="manifest.lead">
               Das Verbindende unserer Produkte ist kein Fachgebiet, sondern ein
               Augenblick: der Moment, in dem jemand etwas verändern möchte.
               Ein Kind, das lernt. Ein Fahrer, der durchhält. Jemand, der loslässt.
             </p>
-            <p class="manifest__body reveal">
+            <p class="manifest__body reveal" data-i18n="manifest.body">
               Eunavia gibt dieser Idee ein Dach — seriös, kommerziell und global.
               Jedes Werkzeug, das wir bauen, beginnt beim Menschen und führt
               ihn ein Stück weiter auf seinem Weg.
@@ -124,9 +124,9 @@
       <!-- PRODUKTE / STANDBEINE -->
       <section class="section products" id="produkte">
         <div class="container products__head">
-          <p class="eyebrow reveal">Unsere Standbeine</p>
-          <h2 class="display reveal">Fünf Produkte,<br /><em>ein Versprechen.</em></h2>
-          <p class="lead reveal">
+          <p class="eyebrow reveal" data-i18n="products.eyebrow">Unsere Standbeine</p>
+          <h2 class="display reveal" data-i18n="products.title">Fünf Produkte,<br /><em>ein Versprechen.</em></h2>
+          <p class="lead reveal" data-i18n="products.lead">
             Von der Schulbank bis zum Steuer, vom Rauchstopp bis zum klaren Kopf —
             jedes Eunavia-Produkt begleitet Menschen an einem echten Wendepunkt.
           </p>
@@ -139,23 +139,23 @@
               <span class="product__num">01</span>
               <div class="frame">
                 <div class="frame__bar"><span></span><span></span><span></span></div>
-                <img src="/products/arbeitsblaetter.jpg" alt="Druckbare Arbeitsblätter von Cyberschooling" loading="lazy" width="1280" height="720" />
+                <img src="/products/arbeitsblaetter.jpg" data-i18n-alt="p1.alt" alt="Druckbare Arbeitsblätter von Cyberschooling" loading="lazy" width="1280" height="720" />
               </div>
             </div>
             <div class="product__body">
-              <p class="product__cat">Bildung · Cyberschooling</p>
-              <h3 class="product__name">Druckbare Arbeitsblätter</h3>
-              <p class="product__desc">
+              <p class="product__cat" data-i18n="p1.cat">Bildung · Cyberschooling</p>
+              <h3 class="product__name" data-i18n="p1.name">Druckbare Arbeitsblätter</h3>
+              <p class="product__desc" data-i18n="p1.desc">
                 Maßgeschneiderte Übungsblätter als PDF — passend zum Lehrplan.
                 Land, Schultyp, Klasse und Fach wählen, fertig zum Ausdrucken.
                 Lernen, das Lehrkräften Stunden spart.
               </p>
               <ul class="product__list">
-                <li>Lehrplan-genau für 197 Länder</li>
-                <li>Als sauberes PDF zum Drucken</li>
-                <li>In Sekunden erstellt</li>
+                <li data-i18n="p1.li1">Lehrplan-genau für 197 Länder</li>
+                <li data-i18n="p1.li2">Als sauberes PDF zum Drucken</li>
+                <li data-i18n="p1.li3">In Sekunden erstellt</li>
               </ul>
-              <a class="link-arrow" href="https://www.cyberschooling.eu/" target="_blank" rel="noopener">
+              <a class="link-arrow" href="https://www.cyberschooling.eu/" target="_blank" rel="noopener" data-i18n="p1.link">
                 Arbeitsblätter erstellen <span>→</span>
               </a>
             </div>
@@ -169,23 +169,23 @@
               <span class="product__num">02</span>
               <div class="frame">
                 <div class="frame__bar"><span></span><span></span><span></span></div>
-                <img src="/products/fahrerwohl.jpg" alt="Fahrerwohl – Wellbeing-App für Berufskraftfahrer" loading="lazy" width="1280" height="800" />
+                <img src="/products/fahrerwohl.jpg" data-i18n-alt="p2.alt" alt="Fahrerwohl – Wellbeing-App für Berufskraftfahrer" loading="lazy" width="1280" height="800" />
               </div>
             </div>
             <div class="product__body">
-              <p class="product__cat">Gesundheit am Arbeitsplatz</p>
+              <p class="product__cat" data-i18n="p2.cat">Gesundheit am Arbeitsplatz</p>
               <h3 class="product__name">Fahrerwohl</h3>
-              <p class="product__desc">
+              <p class="product__desc" data-i18n="p2.desc">
                 Acht Stunden fahren — und gut auf sich achten. Sprachgeführte
                 Mikro-Übungen für Berufskraftfahrer in den Pausen: Atem, Bewegung,
                 Augen und Ernährung. Wohlbefinden, das ins Führerhaus passt.
               </p>
               <ul class="product__list">
-                <li>Sprachbasiert während der Pause</li>
-                <li>Wissenschaftlich fundiert</li>
-                <li>Für Berufs- &amp; Außendienst</li>
+                <li data-i18n="p2.li1">Sprachbasiert während der Pause</li>
+                <li data-i18n="p2.li2">Wissenschaftlich fundiert</li>
+                <li data-i18n="p2.li3">Für Berufs- &amp; Außendienst</li>
               </ul>
-              <a class="link-arrow" href="/fahrerwohl">
+              <a class="link-arrow" href="/fahrerwohl" data-i18n="p2.link">
                 Fahrerwohl ansehen <span>→</span>
               </a>
             </div>
@@ -199,23 +199,23 @@
               <span class="product__num">03</span>
               <div class="frame">
                 <div class="frame__bar"><span></span><span></span><span></span></div>
-                <img src="/products/stopsmoking.jpg" alt="StopSmoking – verhaltenstherapeutische Rauchentwöhnung" loading="lazy" width="1280" height="800" />
+                <img src="/products/stopsmoking.jpg" data-i18n-alt="p3.alt" alt="StopSmoking – verhaltenstherapeutische Rauchentwöhnung" loading="lazy" width="1280" height="800" />
               </div>
             </div>
             <div class="product__body">
-              <p class="product__cat">Rauchentwöhnung</p>
+              <p class="product__cat" data-i18n="p3.cat">Rauchentwöhnung</p>
               <h3 class="product__name">StopSmoking</h3>
-              <p class="product__desc">
+              <p class="product__desc" data-i18n="p3.desc">
                 Du musst das nicht allein schaffen. Verhaltenstherapeutisch
                 fundierte Begleitung beim Rauchstopp — Soforthilfe im richtigen
                 Moment, ehrlich und ohne erhobenen Zeigefinger.
               </p>
               <ul class="product__list">
-                <li>Verhaltenstherapeutischer Ansatz</li>
-                <li>Soforthilfe bei akutem Verlangen</li>
-                <li>Begleitet statt belehrt</li>
+                <li data-i18n="p3.li1">Verhaltenstherapeutischer Ansatz</li>
+                <li data-i18n="p3.li2">Soforthilfe bei akutem Verlangen</li>
+                <li data-i18n="p3.li3">Begleitet statt belehrt</li>
               </ul>
-              <a class="link-arrow" href="https://stopsmoking.eunavia.de/" target="_blank" rel="noopener">
+              <a class="link-arrow" href="https://stopsmoking.eunavia.de/" target="_blank" rel="noopener" data-i18n="p3.link">
                 Rauchfrei werden <span>→</span>
               </a>
             </div>
@@ -229,23 +229,23 @@
               <span class="product__num">04</span>
               <div class="frame">
                 <div class="frame__bar"><span></span><span></span><span></span></div>
-                <img src="/products/klar.jpg" alt="Klar – Begleitung beim Loslassen von Alkohol" loading="lazy" width="1280" height="800" />
+                <img src="/products/klar.jpg" data-i18n-alt="p4.alt" alt="Klar – Begleitung beim Loslassen von Alkohol" loading="lazy" width="1280" height="800" />
               </div>
             </div>
             <div class="product__body">
-              <p class="product__cat">Alkoholentzug</p>
+              <p class="product__cat" data-i18n="p4.cat">Alkoholentzug</p>
               <h3 class="product__name">Klar</h3>
-              <p class="product__desc">
+              <p class="product__desc" data-i18n="p4.desc">
                 Frei werden. Und frei bleiben. Klar begleitet dich auf dem Weg
                 in ein Leben ohne Alkohol — ruhig, anonym und genau dann zur
                 Stelle, wenn es schwer wird. Ohne Druck, ohne Scham.
               </p>
               <ul class="product__list">
-                <li>Anonym &amp; im Alltag</li>
-                <li>Rückfall-Soforthilfe</li>
-                <li>In deinem Tempo</li>
+                <li data-i18n="p4.li1">Anonym &amp; im Alltag</li>
+                <li data-i18n="p4.li2">Rückfall-Soforthilfe</li>
+                <li data-i18n="p4.li3">In deinem Tempo</li>
               </ul>
-              <a class="link-arrow" href="https://klar.eunavia.de/" target="_blank" rel="noopener">
+              <a class="link-arrow" href="https://klar.eunavia.de/" target="_blank" rel="noopener" data-i18n="p4.link">
                 Klar werden <span>→</span>
               </a>
             </div>
@@ -259,23 +259,23 @@
               <span class="product__num">05</span>
               <div class="frame">
                 <div class="frame__bar"><span></span><span></span><span></span></div>
-                <img src="/products/leben.jpg" alt="Leben – Plattform für Lebensqualität" loading="lazy" width="1280" height="800" />
+                <img src="/products/leben.jpg" data-i18n-alt="p5.alt" alt="Leben – Plattform für Lebensqualität" loading="lazy" width="1280" height="800" />
               </div>
             </div>
             <div class="product__body">
               <p class="product__cat">Quality of Life</p>
               <h3 class="product__name">Leben</h3>
-              <p class="product__desc">
+              <p class="product__desc" data-i18n="p5.desc">
                 Dein Leben, Schritt für Schritt stabilisiert. Eine ruhige,
                 integrierte Begleitung für Gesundheit, Bildung und
                 Lebensstabilität — kleine Hebel mit großer Wirkung.
               </p>
               <ul class="product__list">
-                <li>Gesundheit, Bildung &amp; Stabilität</li>
-                <li>Kleine Hebel, große Wirkung</li>
-                <li>Sanft &amp; integriert</li>
+                <li data-i18n="p5.li1">Gesundheit, Bildung &amp; Stabilität</li>
+                <li data-i18n="p5.li2">Kleine Hebel, große Wirkung</li>
+                <li data-i18n="p5.li3">Sanft &amp; integriert</li>
               </ul>
-              <a class="link-arrow" href="https://leben.eunavia.de/welcome" target="_blank" rel="noopener">
+              <a class="link-arrow" href="https://leben.eunavia.de/welcome" target="_blank" rel="noopener" data-i18n="p5.link">
                 Leben entdecken <span>→</span>
               </a>
             </div>
@@ -288,19 +288,19 @@
         <div class="container stats__grid">
           <div class="stat reveal">
             <span class="stat__num" data-count="95" data-suffix=" %">0</span>
-            <span class="stat__label">angestrebte globale Reichweite</span>
+            <span class="stat__label" data-i18n="stats.reach">angestrebte globale Reichweite</span>
           </div>
           <div class="stat reveal">
             <span class="stat__num" data-count="197">0</span>
-            <span class="stat__label">Länder im Bildungsmodell</span>
+            <span class="stat__label" data-i18n="stats.countries">Länder im Bildungsmodell</span>
           </div>
           <div class="stat reveal">
             <span class="stat__num" data-count="81">0</span>
-            <span class="stat__label">unterstützte Sprachen</span>
+            <span class="stat__label" data-i18n="stats.langs">unterstützte Sprachen</span>
           </div>
           <div class="stat reveal">
             <span class="stat__num">5</span>
-            <span class="stat__label">Produkte unter einem Dach</span>
+            <span class="stat__label" data-i18n="stats.products">Produkte unter einem Dach</span>
           </div>
         </div>
       </section>
@@ -308,28 +308,28 @@
       <!-- PRINZIPIEN -->
       <section class="section principles" id="prinzipien">
         <div class="container">
-          <p class="eyebrow reveal">Unsere Prinzipien</p>
-          <h2 class="display reveal">Was Eunavia <em>zusammenhält.</em></h2>
+          <p class="eyebrow reveal" data-i18n="principles.eyebrow">Unsere Prinzipien</p>
+          <h2 class="display reveal" data-i18n="principles.title">Was Eunavia <em>zusammenhält.</em></h2>
           <div class="principles__list">
             <article class="principle reveal">
               <span class="principle__idx">i</span>
-              <h3>Lebensspanne statt Lebensabschnitt</h3>
-              <p>Ein Unternehmen, das Menschen vom ersten Lernen bis ins Erwachsenenleben begleitet — kein Produkt endet, wo das nächste Bedürfnis beginnt.</p>
+              <h3 data-i18n="pr1.h">Lebensspanne statt Lebensabschnitt</h3>
+              <p data-i18n="pr1.p">Ein Unternehmen, das Menschen vom ersten Lernen bis ins Erwachsenenleben begleitet — kein Produkt endet, wo das nächste Bedürfnis beginnt.</p>
             </article>
             <article class="principle reveal">
               <span class="principle__idx">ii</span>
-              <h3>Global gedacht</h3>
-              <p>Mehrsprachig, RTL-fähig und kulturell anschlussfähig. Gebaut für 95 % der Welt — nicht nur für einen Markt.</p>
+              <h3 data-i18n="pr2.h">Global gedacht</h3>
+              <p data-i18n="pr2.p">Mehrsprachig, RTL-fähig und kulturell anschlussfähig. Gebaut für 95 % der Welt — nicht nur für einen Markt.</p>
             </article>
             <article class="principle reveal">
               <span class="principle__idx">iii</span>
-              <h3>KI im Kern</h3>
-              <p>Sprachassistenz, adaptives Tutoring und intelligente Begleitung als Fundament — Technologie, die sich dem Menschen anpasst.</p>
+              <h3 data-i18n="pr3.h">KI im Kern</h3>
+              <p data-i18n="pr3.p">Sprachassistenz, adaptives Tutoring und intelligente Begleitung als Fundament — Technologie, die sich dem Menschen anpasst.</p>
             </article>
             <article class="principle reveal">
               <span class="principle__idx">iv</span>
-              <h3>Evidenz &amp; Wirkung</h3>
-              <p>Verhalten ändern heißt messen, was wirkt. Fortschritt wird sichtbar, ehrlich und ohne erhobenen Zeigefinger.</p>
+              <h3 data-i18n="pr4.h">Evidenz &amp; Wirkung</h3>
+              <p data-i18n="pr4.p">Verhalten ändern heißt messen, was wirkt. Fortschritt wird sichtbar, ehrlich und ohne erhobenen Zeigefinger.</p>
             </article>
           </div>
         </div>
@@ -339,12 +339,12 @@
       <section class="section cta" id="kontakt">
         <div class="container cta__inner reveal">
           <img class="cta__mark" src="/logo-mark.svg" alt="" width="72" height="72" />
-          <h2 class="cta__title">Lernen. Leben. <em>Wachsen.</em></h2>
-          <p class="cta__lead">
+          <h2 class="cta__title" data-i18n="cta.title">Lernen. Leben. <em>Wachsen.</em></h2>
+          <p class="cta__lead" data-i18n="cta.lead">
             Eunavia steht am Anfang. Wenn du Partner, Investor oder Mitstreiter
             werden möchtest, lass uns sprechen.
           </p>
-          <a class="btn btn--gold btn--lg" href="mailto:gerd.wenning@gmail.com?subject=Eunavia">
+          <a class="btn btn--gold btn--lg" href="mailto:gerd.wenning@gmail.com?subject=Eunavia" data-i18n="cta.btn">
             Kontakt aufnehmen
           </a>
         </div>
@@ -358,22 +358,22 @@
             <img class="brand__mark" src="/logo-mark.svg" alt="" width="32" height="32" />
             <span class="brand__word" data-brand="name">Eunavia</span>
           </a>
-          <p class="footer__claim" data-brand="claim">Der gute Weg zum gelingenden Leben.</p>
+          <p class="footer__claim" data-brand="claim" data-i18n="footer.claim">Der gute Weg zum gelingenden Leben.</p>
         </div>
         <nav class="footer__col" aria-label="Produkte">
-          <h4>Produkte</h4>
-          <a href="https://www.cyberschooling.eu/" target="_blank" rel="noopener">Arbeitsblätter</a>
+          <h4 data-i18n="footer.products">Produkte</h4>
+          <a href="https://www.cyberschooling.eu/" target="_blank" rel="noopener" data-i18n="footer.worksheets">Arbeitsblätter</a>
           <a href="/fahrerwohl">Fahrerwohl</a>
           <a href="https://stopsmoking.eunavia.de/" target="_blank" rel="noopener">StopSmoking</a>
           <a href="https://klar.eunavia.de/" target="_blank" rel="noopener">Klar</a>
           <a href="https://leben.eunavia.de/welcome" target="_blank" rel="noopener">Leben</a>
         </nav>
         <nav class="footer__col" aria-label="Unternehmen">
-          <h4>Unternehmen</h4>
-          <a href="#philosophie">Philosophie</a>
-          <a href="#produkte">Produkte</a>
-          <a href="#prinzipien">Prinzipien</a>
-          <a href="mailto:gerd.wenning@gmail.com?subject=Eunavia">Kontakt</a>
+          <h4 data-i18n="footer.company">Unternehmen</h4>
+          <a href="#philosophie" data-i18n="nav.philosophy">Philosophie</a>
+          <a href="#produkte" data-i18n="nav.products">Produkte</a>
+          <a href="#prinzipien" data-i18n="nav.principles">Prinzipien</a>
+          <a href="mailto:gerd.wenning@gmail.com?subject=Eunavia" data-i18n="nav.contact">Kontakt</a>
         </nav>
       </div>
       <div class="container footer__base">

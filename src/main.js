@@ -1,14 +1,21 @@
 import './style.css'
 import { BRAND } from './config.js'
+import { detectLang, applyI18n } from './i18n.js'
+import { homeEN } from './lang/home.en.js'
+
+const lang = detectLang()
 
 /* ---- Markenname zentral anwenden (Single Source of Truth) ---- */
 const setBrand = (key, value) =>
   document.querySelectorAll(`[data-brand="${key}"]`).forEach((el) => { el.textContent = value })
 setBrand('name', BRAND.name)
 setBrand('claim', BRAND.claim)
-setBrand('domain', BRAND.domain)
+setBrand('domain', lang === 'en' ? 'eunavia.com' : 'eunavia.de')
 setBrand('tagline', BRAND.tagline)
 document.title = `${BRAND.name} – ${BRAND.tagline}`
+
+/* ---- Sprache anwenden (NACH data-brand, damit EN den Claim überschreibt) ---- */
+applyI18n(homeEN, lang)
 
 /* ---- Theme: Persistenz + Toggle (Default Dark) ---- */
 const root = document.documentElement
