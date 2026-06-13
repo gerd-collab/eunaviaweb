@@ -6,6 +6,7 @@
 
 export const BRAND = {
   name: 'Eunavia',
+  tagline: 'Human Centered',
   claim: 'Der gute Weg zum gelingenden Leben.',
   slogan: 'Lernen. Leben. Wachsen.',
   domain: 'eunavia.com',

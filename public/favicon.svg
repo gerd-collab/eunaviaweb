@@ -1,12 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Eunavia">
   <defs>
-    <linearGradient id="favGrad" x1="12" y1="104" x2="100" y2="20" gradientUnits="userSpaceOnUse">
+    <linearGradient id="favGrad" x1="22" y1="100" x2="100" y2="18" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#0E9488"/>
-      <stop offset="0.55" stop-color="#10B981"/>
+      <stop offset="0.5" stop-color="#10B981"/>
       <stop offset="1" stop-color="#6EE7B7"/>
     </linearGradient>
   </defs>
-  <rect width="120" height="120" rx="26" fill="#0B1220"/>
-  <path d="M22 100 C 42 96, 52 80, 60 60 C 68 40, 74 32, 86 26" fill="none" stroke="url(#favGrad)" stroke-width="10" stroke-linecap="round"/>
-  <path d="M88 14 L92.8 25 L104 27 L95.2 35 L97.4 46.5 L88 41 L78.6 46.5 L80.8 35 L72 27 L83.2 25 Z" fill="url(#favGrad)"/>
+  <rect width="120" height="120" rx="27" fill="#0B1220"/>
+  <!-- Mensch im Zentrum, kräftig für kleine Größen -->
+  <g fill="none" stroke="url(#favGrad)" stroke-linecap="round" stroke-linejoin="round" stroke-width="12">
+    <circle cx="60" cy="34" r="13" fill="url(#favGrad)" stroke="none"/>
+    <path d="M38 58 L60 47 L82 58"/>
+    <path d="M60 47 L60 82"/>
+    <path d="M60 82 L45 104"/>
+    <path d="M60 82 L75 104"/>
+  </g>
 </svg>

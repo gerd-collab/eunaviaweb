@@ -11,6 +11,9 @@ document.querySelectorAll('[data-brand="claim"]').forEach((el) => {
 document.querySelectorAll('[data-brand="domain"]').forEach((el) => {
   el.textContent = BRAND.domain
 })
+document.querySelectorAll('[data-brand="tagline"]').forEach((el) => {
+  el.textContent = BRAND.tagline
+})
 document.title = `${BRAND.name} – ${BRAND.slogan}`
 
 /* ---- Theme: Persistenz + Toggle (Default Dark) ---- */

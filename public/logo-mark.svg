@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Eunavia Markenzeichen – Mensch im Zentrum">
+  <defs>
+    <linearGradient id="eunaviaGrad" x1="18" y1="104" x2="102" y2="16" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0E9488"/>
+      <stop offset="0.55" stop-color="#10B981"/>
+      <stop offset="1" stop-color="#6EE7B7"/>
+    </linearGradient>
+  </defs>
+  <!-- Offener Bogen: Geborgenheit, der Mensch im Zentrum -->
+  <path
+    d="M26 40 A 44 44 0 1 0 94 40"
+    fill="none"
+    stroke="url(#eunaviaGrad)"
+    stroke-width="10"
+    stroke-linecap="round"
+    opacity="0.45"/>
+  <!-- Mensch mit erhobenen Armen: Aufbruch, Wohlergehen -->
+  <g fill="none" stroke="url(#eunaviaGrad)" stroke-linecap="round" stroke-linejoin="round" stroke-width="11">
+    <circle cx="60" cy="30" r="12" fill="url(#eunaviaGrad)" stroke="none"/>
+    <path d="M40 54 L60 44 L80 54"/>
+    <path d="M60 44 L60 78"/>
+    <path d="M60 78 L46 100"/>
+    <path d="M60 78 L74 100"/>
+  </g>
+</svg>
