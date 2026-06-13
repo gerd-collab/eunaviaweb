@@ -28,7 +28,7 @@
         </a>
         <nav class="nav__links" aria-label="Hauptnavigation">
           <a href="#mission">Mission</a>
-          <a href="#saeulen">Säulen</a>
+          <a href="#produkte">Produkte</a>
           <a href="#ansatz">Ansatz</a>
           <a href="#kontakt">Kontakt</a>
         </nav>
@@ -69,7 +69,7 @@
             Eine Software-Familie, eine Mission: Menschen wachsen lassen.
           </p>
           <div class="hero__actions reveal">
-            <a class="btn btn--primary" href="#saeulen">Unsere Säulen entdecken</a>
+            <a class="btn btn--primary" href="#produkte">Unsere Produkte entdecken</a>
             <a class="btn btn--ghost" href="#mission">Was uns antreibt</a>
           </div>
           <dl class="hero__stats reveal">
@@ -102,46 +102,163 @@
         </div>
       </section>
 
-      <!-- SÄULEN -->
-      <section class="section section--alt" id="saeulen">
+      <!-- PRODUKTE / STANDBEINE -->
+      <section class="section section--alt products" id="produkte">
         <div class="container">
-          <p class="eyebrow reveal">Die zwei Säulen</p>
-          <h2 class="section__title reveal">Eine Marke, <span class="grad-text">zwei Wege.</span></h2>
-          <div class="pillars">
-            <article class="pillar reveal">
-              <div class="pillar__badge pillar__badge--edu">Bildung</div>
-              <h3 class="pillar__name">Cyberschooling</h3>
-              <p class="pillar__desc">
-                Das globale digitale Bildungssystem: einbettbare Lern-Apps, sprachbasiertes
-                Tutoring und Lehrpläne für 197 Länder. Lernen, das jedes Kind erreicht —
-                in 81 Sprachen, auf jedem Gerät.
-              </p>
-              <ul class="pillar__list">
-                <li>40+ embeddable Math- &amp; Science-Apps</li>
-                <li>Voice-Tutoring &amp; KI-Assistenz</li>
-                <li>Curriculum-Explorer für 197 Länder</li>
-              </ul>
-            </article>
-
-            <article class="pillar reveal">
-              <div class="pillar__badge pillar__badge--health">Gesundheit &amp; Lebensqualität</div>
-              <h3 class="pillar__name">Vivanova <span class="pillar__tag">geplant</span></h3>
-              <p class="pillar__desc">
-                Digitale Begleiter für Erwachsene: Bewegungsmangel und Übergewicht angehen,
-                Alkohol- und Rauchentwöhnung, Quality-of-Life-Management. Verhaltensänderung,
-                die im Alltag trägt.
-              </p>
-              <ul class="pillar__list">
-                <li>Gewohnheits- &amp; Entzugs-Coaching</li>
-                <li>Bewegungs- &amp; Gewichtsmanagement</li>
-                <li>Lebensqualität messbar machen</li>
-              </ul>
-            </article>
-          </div>
-          <p class="pillars__note reveal">
-            Arbeitstitel der Gesundheitssparte — der finale Markenname wird noch geprüft.
-          </p>
+          <header class="products__head">
+            <p class="eyebrow reveal">Unsere Standbeine</p>
+            <h2 class="section__title reveal">Fünf Produkte, <span class="grad-text">ein Versprechen.</span></h2>
+            <p class="section__lead reveal">
+              Von der Schulbank bis zum Steuer, vom Rauchstopp bis zum klaren Kopf —
+              jedes Eunavia-Produkt begleitet Menschen an einem echten Wendepunkt.
+            </p>
+          </header>
         </div>
+
+        <!-- 1 · Druckbare Arbeitsblätter -->
+        <article class="product" style="--accent:#3B82F6">
+          <div class="container product__grid reveal">
+            <div class="product__media">
+              <div class="browser">
+                <div class="browser__bar"><span></span><span></span><span></span></div>
+                <img src="/products/arbeitsblaetter.jpg" alt="Screenshot der Arbeitsblatt-Erstellung von Cyberschooling" loading="lazy" width="1200" height="600" />
+              </div>
+            </div>
+            <div class="product__body">
+              <p class="product__cat">Bildung · Cyberschooling</p>
+              <h3 class="product__name">Druckbare Arbeitsblätter</h3>
+              <p class="product__desc">
+                Maßgeschneiderte Übungsblätter als PDF — passend zum Lehrplan.
+                Land, Schultyp, Klasse und Fach wählen, fertig zum Ausdrucken.
+                Lernen, das Lehrkräften Stunden spart.
+              </p>
+              <ul class="product__list">
+                <li>Lehrplan-genau für 197 Länder</li>
+                <li>Als sauberes PDF zum Drucken</li>
+                <li>In Sekunden erstellt</li>
+              </ul>
+              <a class="btn btn--primary" href="https://www.cyberschooling.eu/" target="_blank" rel="noopener">
+                Arbeitsblätter erstellen →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 · Fahrerwohl -->
+        <article class="product product--reverse" style="--accent:#F59E0B">
+          <div class="container product__grid reveal">
+            <div class="product__media">
+              <div class="browser">
+                <div class="browser__bar"><span></span><span></span><span></span></div>
+                <img src="/products/fahrerwohl.jpg" alt="Screenshot der Fahrerwohl-App" loading="lazy" width="1200" height="750" />
+              </div>
+            </div>
+            <div class="product__body">
+              <p class="product__cat">Gesundheit am Arbeitsplatz</p>
+              <h3 class="product__name">Fahrerwohl</h3>
+              <p class="product__desc">
+                Acht Stunden fahren — und gut auf sich achten. Sprachgeführte
+                Mikro-Übungen für Berufskraftfahrer in den Pausen: Atem, Bewegung,
+                Augen und Ernährung. Wohlbefinden, das ins Führerhaus passt.
+              </p>
+              <ul class="product__list">
+                <li>Sprachbasiert während der Pause</li>
+                <li>Wissenschaftlich fundiert</li>
+                <li>Für Berufs- &amp; Außendienst</li>
+              </ul>
+              <a class="btn btn--primary" href="https://www.cyberschooling.eu/fahrerwohl" target="_blank" rel="noopener">
+                Fahrerwohl ansehen →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 · StopSmoking -->
+        <article class="product" style="--accent:#14B8A6">
+          <div class="container product__grid reveal">
+            <div class="product__media">
+              <div class="browser">
+                <div class="browser__bar"><span></span><span></span><span></span></div>
+                <img src="/products/stopsmoking.jpg" alt="Screenshot der StopSmoking-App" loading="lazy" width="1200" height="750" />
+              </div>
+            </div>
+            <div class="product__body">
+              <p class="product__cat">Rauchentwöhnung</p>
+              <h3 class="product__name">StopSmoking</h3>
+              <p class="product__desc">
+                Du musst das nicht allein schaffen. Verhaltenstherapeutisch
+                fundierte Begleitung beim Rauchstopp — Soforthilfe im richtigen
+                Moment, ehrlich und ohne erhobenen Zeigefinger.
+              </p>
+              <ul class="product__list">
+                <li>Verhaltenstherapeutischer Ansatz</li>
+                <li>Soforthilfe bei akutem Verlangen</li>
+                <li>Begleitet statt belehrt</li>
+              </ul>
+              <a class="btn btn--primary" href="https://stopsmoking.eunavia.de/" target="_blank" rel="noopener">
+                Rauchfrei werden →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4 · Klar (Alkoholentzug) -->
+        <article class="product product--reverse" style="--accent:#0EA5E9">
+          <div class="container product__grid reveal">
+            <div class="product__media">
+              <div class="browser">
+                <div class="browser__bar"><span></span><span></span><span></span></div>
+                <img src="/products/klar.jpg" alt="Screenshot der Klar-App für Alkoholentzug" loading="lazy" width="1200" height="750" />
+              </div>
+            </div>
+            <div class="product__body">
+              <p class="product__cat">Alkoholentzug</p>
+              <h3 class="product__name">Klar</h3>
+              <p class="product__desc">
+                Ein klarer Kopf, ein klarer Weg. Digitale Begleitung beim
+                Reduzieren und Loslassen von Alkohol — Schritt für Schritt,
+                in deinem Tempo, mit Hilfe genau dann, wenn sie zählt.
+              </p>
+              <ul class="product__list">
+                <li>Begleitung im Alltag</li>
+                <li>Rückfall-Soforthilfe</li>
+                <li>In deinem Tempo</li>
+              </ul>
+              <a class="btn btn--primary" href="https://klar.eunavia.de/" target="_blank" rel="noopener">
+                Klar werden →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5 · Leben (Quality of Life) -->
+        <article class="product" style="--accent:#10B981">
+          <div class="container product__grid reveal">
+            <div class="product__media">
+              <div class="browser">
+                <div class="browser__bar"><span></span><span></span><span></span></div>
+                <img src="/products/leben.jpg" alt="Screenshot der Lebensqualitäts-Plattform Leben" loading="lazy" width="1200" height="750" />
+              </div>
+            </div>
+            <div class="product__body">
+              <p class="product__cat">Quality of Life</p>
+              <h3 class="product__name">Leben</h3>
+              <p class="product__desc">
+                Dein Leben, Schritt für Schritt stabilisiert. Eine ruhige,
+                integrierte Begleitung für Gesundheit, Bildung und
+                Lebensstabilität — kleine Hebel mit großer Wirkung.
+              </p>
+              <ul class="product__list">
+                <li>Gesundheit, Bildung &amp; Stabilität</li>
+                <li>Kleine Hebel, große Wirkung</li>
+                <li>Sanft &amp; integriert</li>
+              </ul>
+              <a class="btn btn--primary" href="https://leben.eunavia.de/welcome" target="_blank" rel="noopener">
+                Leben entdecken →
+              </a>
+            </div>
+          </div>
+        </article>
       </section>
 
       <!-- ANSATZ -->
