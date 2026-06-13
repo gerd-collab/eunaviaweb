@@ -1,4 +1,17 @@
 import './style.css'
+import { BRAND } from './config.js'
+
+/* ---- Markenname zentral anwenden (Single Source of Truth) ---- */
+document.querySelectorAll('[data-brand="name"]').forEach((el) => {
+  el.textContent = BRAND.name
+})
+document.querySelectorAll('[data-brand="claim"]').forEach((el) => {
+  el.textContent = BRAND.claim
+})
+document.querySelectorAll('[data-brand="domain"]').forEach((el) => {
+  el.textContent = BRAND.domain
+})
+document.title = `${BRAND.name} – ${BRAND.slogan}`
 
 /* ---- Theme: Persistenz + Toggle (Default Dark) ---- */
 const root = document.documentElement
