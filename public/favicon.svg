@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Eunavia">
+  <defs>
+    <linearGradient id="favGrad" x1="12" y1="104" x2="100" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0E9488"/>
+      <stop offset="0.55" stop-color="#10B981"/>
+      <stop offset="1" stop-color="#6EE7B7"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="26" fill="#0B1220"/>
+  <path d="M22 100 C 42 96, 52 80, 60 60 C 68 40, 74 32, 86 26" fill="none" stroke="url(#favGrad)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M88 14 L92.8 25 L104 27 L95.2 35 L97.4 46.5 L88 41 L78.6 46.5 L80.8 35 L72 27 L83.2 25 Z" fill="url(#favGrad)"/>
+</svg>
