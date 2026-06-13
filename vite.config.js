@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import { resolve } from 'path'
 
 export default defineConfig({
   server: {
@@ -8,5 +9,12 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsInlineLimit: 0,
+    // Multi-Page: index.html (Marketing) + fahrerwohl.html (Produktseite)
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        fahrerwohl: resolve(__dirname, 'fahrerwohl.html'),
+      },
+    },
   },
 })

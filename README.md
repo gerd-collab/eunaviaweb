@@ -2,7 +2,7 @@
 
 > Der gute Weg zum gelingenden Leben.
 
-Marketing-Website des Dachkonzerns **Eunavia** — für Bildung und Lebensqualität über die ganze Lebensspanne. Unter dem Dach liegen zwei Säulen:
+Marketing-Website der Dachmarke **Eunavia** — für Bildung und Lebensqualität über die ganze Lebensspanne. Unter dem Dach liegen zwei Säulen:
 
 - **Cyberschooling** — globales digitales Bildungssystem (Lern-Apps, Voice-Tutoring, Lehrpläne für 197 Länder)
 - **Vivanova** *(Arbeitstitel)* — digitale Gesundheit & Lebensqualität für Erwachsene (Bewegung, Gewicht, Entwöhnung, Quality-of-Life)

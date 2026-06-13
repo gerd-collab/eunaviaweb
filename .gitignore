@@ -1,6 +1,7 @@
 node_modules
 dist
 dist-ssr
+media-src
 *.local
 .DS_Store
 .vercel

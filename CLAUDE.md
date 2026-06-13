@@ -6,7 +6,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Was das ist
 
-Statische Marketing-One-Pager-Website des **Dachkonzerns Eunavia** ("Human Centered" — _Der gute Weg zum gelingenden Leben_). Stellt den Konzern und seine fünf Produkt-Standbeine vor (Arbeitsblätter, Fahrerwohl, StopSmoking, Klar, Leben), die auf eigene Domains verlinken. **Kein** App-Code, keine Daten, kein Backend — reine Präsentationsseite.
+Statische Marketing-One-Pager-Website der **Dachmarke Eunavia** ("Human Centered" — _Der gute Weg zum gelingenden Leben_). Stellt die Marke und ihre fünf Produkt-Standbeine vor (Arbeitsblätter, Fahrerwohl, StopSmoking, Klar, Leben), die auf eigene Domains verlinken. **Kein** App-Code, keine Daten, kein Backend — reine Präsentationsseite.
+
+> Wording: Eunavia ist aktuell ein Ein-Personen-Unternehmen. Das Wort **„Konzern" bewusst nicht** in der Außendarstellung verwenden — ein Konzern zu werden ist das _Ziel_, nicht der Status. Im Public-Copy „Unternehmen" / „Dachmarke" statt „Konzern".
 
 Markenarchitektur: Eunavia (Dach) → zwei Säulen **Cyberschooling** (Bildung) und **Vivanova** (Gesundheit, _nur Arbeitstitel, nicht final_).
 
