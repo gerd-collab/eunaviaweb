@@ -109,6 +109,7 @@ export const datenschutzEN = {
     'The international standard for well-considered information-security management — clear rules and responsibilities in how data is handled.',
   'ds.cert.note':
     'Eunavia is at the beginning of this journey. We build privacy in from the very first line of code and pursue the certifications step by step — starting where the data is most sensitive.',
+  'ds.cert.download': 'Read the full concept as a PDF ↓',
 
   // CTA
   'ds.cta.title': 'Questions about your data?',

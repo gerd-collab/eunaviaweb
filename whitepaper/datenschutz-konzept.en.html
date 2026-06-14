@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Eunavia – Privacy &amp; Trust</title>
+<style>
+  :root {
+    --teal: #0E7C74;
+    --teal-deep: #0A5D57;
+    --ink: #1c2b27;
+    --dim: #51635d;
+    --line: #d8e2df;
+    --soft: #f1f6f4;
+    --gold: #b8893f;
+  }
+  @page { size: A4; margin: 20mm 18mm 18mm 18mm; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif; color: var(--ink);
+    font-size: 10.5pt; line-height: 1.55; margin: 0;
+  }
+  h1, h2, h3 { color: var(--teal-deep); line-height: 1.2; }
+  h1 { font-size: 25pt; letter-spacing: -0.01em; margin: 0 0 10px; }
+  h2 {
+    font-size: 15pt; margin: 26px 0 10px; padding-bottom: 6px;
+    border-bottom: 2px solid var(--teal);
+  }
+  h3 { font-size: 11.5pt; margin: 18px 0 6px; color: var(--teal); }
+  p { margin: 0 0 10px; }
+  strong { color: var(--ink); }
+  em { color: var(--teal-deep); font-style: italic; }
+  a { color: var(--teal); text-decoration: none; }
+  .eyebrow {
+    font-size: 8.5pt; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--teal); margin: 0 0 14px;
+  }
+  .rule { width: 70px; height: 3px; background: var(--teal); margin: 16px 0 22px; }
+  .lead { font-size: 12pt; color: var(--dim); max-width: 50em; }
+  .meta { margin-top: 26px; font-size: 9pt; color: var(--dim); }
+  .meta em { color: var(--dim); }
+
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 6px; font-size: 9.5pt; }
+  th { background: var(--teal); color: #fff; text-align: left; padding: 8px 10px; font-weight: 600; }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:nth-child(even) td { background: var(--soft); }
+  td b { color: var(--teal-deep); }
+
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 12px 0; }
+  .card { border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; background: #fff; }
+  .card h3 { margin: 0 0 4px; }
+  .card p { margin: 0; font-size: 9.5pt; color: var(--dim); }
+
+  .callout {
+    border-left: 4px solid var(--gold); background: var(--soft);
+    padding: 12px 16px; margin: 16px 0; border-radius: 0 8px 8px 0;
+  }
+  .callout p { margin: 0; }
+  .callout .h { font-weight: 700; color: var(--teal-deep); }
+
+  .token {
+    text-align: center; margin: 14px 0; font-family: "Courier New", monospace;
+    font-size: 9.5pt; color: var(--teal-deep);
+  }
+  .token .pill {
+    display: inline-block; border: 1px dashed var(--gold); border-radius: 999px;
+    padding: 5px 14px; background: #fff; color: var(--gold);
+  }
+
+  ul.clean { list-style: none; padding: 0; margin: 10px 0; }
+  ul.clean li { position: relative; padding-left: 20px; margin-bottom: 7px; }
+  ul.clean li::before { content: "✓"; position: absolute; left: 0; color: var(--teal); font-weight: 700; }
+  ul.never li::before { content: "×"; color: #c0392b; }
+
+  .section { page-break-inside: avoid; }
+  h2 { page-break-after: avoid; }
+  footer.doc { margin-top: 30px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 8.5pt; color: var(--dim); }
+</style>
+</head>
+<body>
+
+  <p class="eyebrow">Eunavia · Privacy &amp; Trust</p>
+  <h1>How we protect your data.</h1>
+  <div class="rule"></div>
+  <p class="lead">
+    The privacy and anonymity concept behind the Eunavia health apps — explained
+    plainly. Maximum protection for the most sensitive data there is, without losing
+    function or ease of use.
+  </p>
+  <p class="meta">
+    As of June 2026 · <em>Not medical or legally binding advice.</em>
+  </p>
+
+  <div class="section">
+    <h2>1 · What this is about</h2>
+    <p>
+      Our apps accompany people through deeply personal moments — quitting smoking,
+      letting go of alcohol, questions about their own health and wellbeing. This is the
+      most sensitive data there is. That is why privacy at Eunavia is not an afterthought
+      but the foundation everything rests on.
+    </p>
+    <p>
+      This document summarises how we deliver that protection technically — in plain
+      language, so you can understand why you can trust us. The core idea is
+      <strong>separation</strong>: who you are and what you record about your health are
+      never kept together.
+    </p>
+    <div class="callout">
+      <p><span class="h">The central tension — and how we resolve it.</span>
+      “Staying anonymous” and “being able to identify yourself” (e.g. to restore a
+      personal history) only seem to contradict each other. The solution is separation:
+      who a person is is kept apart from <em>what</em> they record about their health.
+      The two halves are linked only by an anonymous tag that reveals nothing on its own.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>2 · The eight guiding principles</h2>
+    <p>These principles are firmly anchored in the technology of our products.</p>
+    <table>
+      <tr><th>#</th><th>Principle</th><th>What it means</th></tr>
+      <tr><td>1</td><td><b>Data minimisation</b></td><td>We only collect what a meaningful function genuinely needs. Location, name, etc. stay optional.</td></tr>
+      <tr><td>2</td><td><b>Anonymous by default</b></td><td>The app works fully without an account. No mandatory login, no real name.</td></tr>
+      <tr><td>3</td><td><b>At home on your device</b></td><td>Your raw data stays encrypted on your device. A cloud is optional, not the source of truth.</td></tr>
+      <tr><td>4</td><td><b>Identity ↔ health separated</b></td><td>Two separate vaults, linked only by an anonymous tag (split-identity).</td></tr>
+      <tr><td>5</td><td><b>One fortress per app</b></td><td>Separate data worlds and keys per product. No shared profile across the apps.</td></tr>
+      <tr><td>6</td><td><b>Encryption everywhere</b></td><td>Encrypted on the device, in transit, and — if used — in the cloud.</td></tr>
+      <tr><td>7</td><td><b>You stay in control</b></td><td>Export with one tap, delete with one tap — and deleting means really deleted.</td></tr>
+      <tr><td>8</td><td><b>No data trade, no trackers</b></td><td>Zero ad networks, zero third-party analytics. We do not sell your data.</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>3 · Anonymity and identification — the split-identity model</h2>
+    <p>
+      People should stay anonymous yet still be able to recognise themselves when needed
+      — and everything should stay simple. This works through two strictly separated
+      vaults, neither of which knows the contents of the other.
+    </p>
+    <div class="cards">
+      <div class="card">
+        <h3>Identity vault — “who you are”</h3>
+        <p>Knows, if anything, only an anonymous way in (e.g. your device’s fingerprint
+        or face unlock). No health data. No name, no email needed.</p>
+      </div>
+      <div class="card">
+        <h3>Health vault — “what you record”</h3>
+        <p>Stores your entries, progress and history — but without knowing who you are.
+        No name, no email, no device. Just the content, detached from the person.</p>
+      </div>
+    </div>
+    <div class="token"><span class="pill">anonymous tag</span> &nbsp;— links the two, reveals nothing alone</div>
+    <p>
+      Only both halves together would form a complete picture — and that is exactly what
+      we prevent by keeping them apart. Anyone who got hold of one half would hold only a
+      meaningless half.
+    </p>
+    <h3>Recovery without email</h3>
+    <p>
+      A lost device must mean neither data loss nor a mandatory email address. On setup,
+      the app creates a personal <strong>recovery key</strong> (e.g. a memorable phrase).
+      It lets you restore an optional, end-to-end encrypted cloud history on a new device
+      — entirely without an email address, and without any server ever seeing the
+      plaintext.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>4 · One fortress per app</h2>
+    <p>
+      Each product gets its own sealed-off data world with its own keys. This is security
+      through <strong>compartmentalisation</strong> — and at the same time a privacy gain,
+      because a cross-app profile cannot even come into being.
+    </p>
+    <table>
+      <tr><th>Layer</th><th>Measure</th><th>Effect</th></tr>
+      <tr><td>Hosting</td><td>Own project/account per app, in the EU region</td><td>An incident in one app affects no other.</td></tr>
+      <tr><td>Database</td><td>Own database and credentials per app</td><td>Separate stores, no shared keys.</td></tr>
+      <tr><td>Keys</td><td>Own master key per app, own data key per person</td><td>A single key never unlocks everything.</td></tr>
+    </table>
+    <div class="callout">
+      <p><span class="h">Deliberately no shared account across apps.</span>
+      A central “Eunavia account” would be convenient — but exactly wrong for health data:
+      it would create a single pot whose leak exposes everything. Instead, every app stays
+      its own fortress.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>5 · Encryption &amp; “really deleting”</h2>
+    <p>Protection at every stage — and deletion that works even in backups.</p>
+    <table>
+      <tr><th>Stage</th><th>Protection</th><th>Guards against</th></tr>
+      <tr><td>On the device</td><td>Strong encryption, keys in secure device storage</td><td>Lost or stolen device</td></tr>
+      <tr><td>In transit</td><td>Modern transport encryption</td><td>Eavesdropping on the network</td></tr>
+      <tr><td>In the cloud (optional)</td><td>End-to-end: the server only sees unreadable ciphertext</td><td>Server incidents, curious operators</td></tr>
+    </table>
+    <h3>Deleting that really deletes</h3>
+    <p>
+      The “right to erasure” is often poorly implemented because data survives in backups.
+      With us: instead of laboriously hunting down records, we destroy the personal key.
+      Without it, that person’s entire data — in every backup too — becomes irretrievably
+      unreadable. One tap, effective immediately.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>6 · Emergencies without losing function</h2>
+    <p>
+      Privacy must not slow the function down — and there has to be a fast emergency
+      feature. The two are no contradiction: a local emergency path is both faster
+      <em>and</em> more data-minimal.
+    </p>
+    <ul class="clean">
+      <li>Instant help in critical moments runs completely <strong>offline and without an account</strong>.</li>
+      <li>Important crisis resources (e.g. emergency and helpline numbers) are built into the app — no online lookup needed.</li>
+      <li>An optional trusted contact is stored only locally; triggering it calls directly, without going via a server.</li>
+      <li>At warning signs, the app points kindly but firmly to human and medical help — rather than “treating” you itself.</li>
+    </ul>
+    <div class="callout">
+      <p><span class="h">The key point.</span> Because the most effective functions run on
+      the device anyway, the privacy-friendly architecture is also the fastest and most
+      robust. Your benefit and privacy point in the same direction.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>7 · What we never do</h2>
+    <ul class="clean never">
+      <li>Sell your data or pass it to third parties.</li>
+      <li>Build advertising or tracking services into our apps.</li>
+      <li>Create a shared profile across all apps.</li>
+      <li>Force you to provide an email address or a login.</li>
+      <li>Make life-saving help depend on an internet connection.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>8 · Verifiable — independent auditing</h2>
+    <p>
+      We don’t just want to say your data is safe — we align our health apps with
+      recognised, independent seals and standards.
+    </p>
+    <table>
+      <tr><th>Seal / standard</th><th>What it certifies</th></tr>
+      <tr><td><b>TÜV-certified app</b></td><td>Manufacturer-independent quality seal: usability, legal compliance and data security — the familiar mark of approval.</td></tr>
+      <tr><td><b>BSI TR-03161</b></td><td>Technical guideline of Germany’s Federal Office for Information Security for health apps (app, server, transfer).</td></tr>
+      <tr><td><b>ISO/IEC 27001</b></td><td>International standard for well-considered information-security management — clear rules and responsibilities.</td></tr>
+    </table>
+    <p class="meta">
+      Eunavia is at the beginning of this journey. We build privacy in from the very first
+      line of code and pursue the certifications step by step — starting where the data is
+      most sensitive.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>9 · Glossary</h2>
+    <table>
+      <tr><th>Term</th><th>Meaning</th></tr>
+      <tr><td><b>Split-identity</b></td><td>Separating “who you are” from “what you record” into two vaults, linked only by an anonymous tag.</td></tr>
+      <tr><td><b>End-to-end</b></td><td>Encryption only your devices can read — the server stores nothing but unreadable ciphertext.</td></tr>
+      <tr><td><b>Crypto-shredding</b></td><td>Deleting by destroying the key — the data becomes irretrievably unreadable, in backups too.</td></tr>
+      <tr><td><b>Passkey</b></td><td>Device-bound, phishing-resistant sign-in without a password and without email (e.g. via fingerprint).</td></tr>
+      <tr><td><b>Compartmentalisation</b></td><td>Strict separation into sealed-off areas, so an incident never affects everything at once.</td></tr>
+    </table>
+  </div>
+
+  <footer class="doc">
+    Eunavia · Privacy &amp; Trust · As of June 2026 · eunavia.com —
+    This overview explains our protection concept in plain terms and is not medical or
+    legally binding advice.
+  </footer>
+
+</body>
+</html>

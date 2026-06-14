@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<title>Eunavia – Datenschutz &amp; Vertrauen</title>
+<style>
+  :root {
+    --teal: #0E7C74;
+    --teal-deep: #0A5D57;
+    --ink: #1c2b27;
+    --dim: #51635d;
+    --line: #d8e2df;
+    --soft: #f1f6f4;
+    --gold: #b8893f;
+  }
+  @page { size: A4; margin: 20mm 18mm 18mm 18mm; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif; color: var(--ink);
+    font-size: 10.5pt; line-height: 1.55; margin: 0;
+  }
+  h1, h2, h3 { color: var(--teal-deep); line-height: 1.2; }
+  h1 { font-size: 25pt; letter-spacing: -0.01em; margin: 0 0 10px; }
+  h2 {
+    font-size: 15pt; margin: 26px 0 10px; padding-bottom: 6px;
+    border-bottom: 2px solid var(--teal);
+  }
+  h3 { font-size: 11.5pt; margin: 18px 0 6px; color: var(--teal); }
+  p { margin: 0 0 10px; }
+  strong { color: var(--ink); }
+  em { color: var(--teal-deep); font-style: italic; }
+  a { color: var(--teal); text-decoration: none; }
+  .eyebrow {
+    font-size: 8.5pt; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--teal); margin: 0 0 14px;
+  }
+  .rule { width: 70px; height: 3px; background: var(--teal); margin: 16px 0 22px; }
+  .lead { font-size: 12pt; color: var(--dim); max-width: 50em; }
+  .meta { margin-top: 26px; font-size: 9pt; color: var(--dim); }
+  .meta em { color: var(--dim); }
+
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 6px; font-size: 9.5pt; }
+  th { background: var(--teal); color: #fff; text-align: left; padding: 8px 10px; font-weight: 600; }
+  td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:nth-child(even) td { background: var(--soft); }
+  td b, th + td b { color: var(--teal-deep); }
+
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 12px 0; }
+  .card { border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; background: #fff; }
+  .card h3 { margin: 0 0 4px; }
+  .card p { margin: 0; font-size: 9.5pt; color: var(--dim); }
+
+  .callout {
+    border-left: 4px solid var(--gold); background: var(--soft);
+    padding: 12px 16px; margin: 16px 0; border-radius: 0 8px 8px 0;
+  }
+  .callout p { margin: 0; }
+  .callout .h { font-weight: 700; color: var(--teal-deep); }
+
+  .token {
+    text-align: center; margin: 14px 0; font-family: "Courier New", monospace;
+    font-size: 9.5pt; color: var(--teal-deep);
+  }
+  .token .pill {
+    display: inline-block; border: 1px dashed var(--gold); border-radius: 999px;
+    padding: 5px 14px; background: #fff; color: var(--gold);
+  }
+
+  ul.clean { list-style: none; padding: 0; margin: 10px 0; }
+  ul.clean li { position: relative; padding-left: 20px; margin-bottom: 7px; }
+  ul.clean li::before { content: "✓"; position: absolute; left: 0; color: var(--teal); font-weight: 700; }
+  ul.never li::before { content: "×"; color: #c0392b; }
+
+  .section { page-break-inside: avoid; }
+  h2 { page-break-after: avoid; }
+  .pagebreak { page-break-before: always; }
+  footer.doc { margin-top: 30px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 8.5pt; color: var(--dim); }
+</style>
+</head>
+<body>
+
+  <p class="eyebrow">Eunavia · Datenschutz &amp; Vertrauen</p>
+  <h1>Wie wir deine Daten schützen.</h1>
+  <div class="rule"></div>
+  <p class="lead">
+    Das Datenschutz- und Anonymitäts-Konzept hinter den Eunavia-Gesundheits-Apps —
+    verständlich erklärt. Maximaler Schutz für die schützenswertesten Daten, die es
+    gibt, ohne Verlust an Funktion und Bedienbarkeit.
+  </p>
+  <p class="meta">
+    Stand Juni 2026 · <em>Keine medizinische oder rechtsverbindliche Beratung.</em>
+  </p>
+
+  <div class="section">
+    <h2>1 · Worum es geht</h2>
+    <p>
+      Unsere Apps begleiten Menschen in sehr persönlichen Momenten — beim Rauchstopp,
+      beim Loslassen von Alkohol, in Fragen der eigenen Gesundheit und des Wohlbefindens.
+      Das sind die schützenswertesten Daten, die es gibt. Darum ist Datenschutz bei
+      Eunavia kein nachträgliches Feature, sondern das Fundament, auf dem alles steht.
+    </p>
+    <p>
+      Dieses Dokument fasst zusammen, wie wir diesen Schutz technisch umsetzen — in
+      einfacher Sprache, damit du nachvollziehen kannst, warum du uns vertrauen kannst.
+      Die zentrale Idee ist <strong>Trennung</strong>: Wer du bist und was du über deine
+      Gesundheit einträgst, bewahren wir niemals gemeinsam auf.
+    </p>
+    <div class="callout">
+      <p><span class="h">Die zentrale Spannung — und ihre Auflösung.</span>
+      „Anonym bleiben" und „sich identifizieren können" (z. B. um einen persönlichen
+      Verlauf wiederherzustellen) widersprechen sich nur scheinbar. Die Lösung ist
+      Trennung: Wer jemand ist, wird getrennt von dem verwahrt, <em>was</em> die Person
+      über ihre Gesundheit einträgt. Beide Hälften sind nur über ein anonymes Kürzel
+      verbunden, das allein nichts verrät.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>2 · Die acht Leitprinzipien</h2>
+    <p>Diese Grundsätze sind in der Technik unserer Produkte verbindlich verankert.</p>
+    <table>
+      <tr><th>#</th><th>Prinzip</th><th>Was es bedeutet</th></tr>
+      <tr><td>1</td><td><b>Datensparsamkeit</b></td><td>Wir erheben nur, was eine sinnvolle Funktion wirklich braucht. Standort, Name & Co. bleiben optional.</td></tr>
+      <tr><td>2</td><td><b>Anonym per Default</b></td><td>Die App funktioniert vollständig ohne Konto. Kein Pflicht-Login, kein echter Name.</td></tr>
+      <tr><td>3</td><td><b>Auf dem Gerät zuhause</b></td><td>Deine Rohdaten bleiben verschlüsselt auf deinem Gerät. Eine Cloud ist optional, nicht die Quelle der Wahrheit.</td></tr>
+      <tr><td>4</td><td><b>Identität ↔ Gesundheit getrennt</b></td><td>Zwei getrennte Tresore, nur über ein anonymes Kürzel verbunden (Split-Identity).</td></tr>
+      <tr><td>5</td><td><b>Eine Festung pro App</b></td><td>Getrennte Datenwelten und Schlüssel je Produkt. Kein gemeinsames Profil über die Apps hinweg.</td></tr>
+      <tr><td>6</td><td><b>Verschlüsselung überall</b></td><td>Verschlüsselt auf dem Gerät, bei der Übertragung und — falls genutzt — in der Cloud.</td></tr>
+      <tr><td>7</td><td><b>Du behältst die Kontrolle</b></td><td>Export mit einem Tap, Löschen mit einem Tap — und Löschen heißt wirklich gelöscht.</td></tr>
+      <tr><td>8</td><td><b>Kein Datenhandel, keine Tracker</b></td><td>Null Werbe-Netzwerke, null fremde Analyse-Dienste. Wir verkaufen deine Daten nicht.</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>3 · Anonymität und Identifizierung — das Split-Identity-Modell</h2>
+    <p>
+      Menschen sollen anonym bleiben, sich bei Bedarf aber trotzdem wiedererkennen
+      können — und alles soll einfach bleiben. Das gelingt durch zwei strikt getrennte
+      Tresore, von denen keiner den Inhalt des anderen kennt.
+    </p>
+    <div class="cards">
+      <div class="card">
+        <h3>Identitäts-Tresor — „Wer du bist"</h3>
+        <p>Kennt, wenn überhaupt, nur einen anonymen Zugang (z. B. Fingerabdruck oder
+        Gesichts-Entsperrung deines Geräts). Keine Gesundheitsdaten. Kein Name,
+        keine E-Mail nötig.</p>
+      </div>
+      <div class="card">
+        <h3>Gesundheits-Tresor — „Was du einträgst"</h3>
+        <p>Speichert deine Einträge, Fortschritte und Verläufe — aber ohne zu wissen,
+        wer du bist. Kein Name, keine E-Mail, kein Gerät. Nur der Inhalt, von der
+        Person gelöst.</p>
+      </div>
+    </div>
+    <div class="token"><span class="pill">anonymes Kürzel</span> &nbsp;— verbindet beide, verrät allein nichts</div>
+    <p>
+      Erst beide Hälften zusammen ergäben ein vollständiges Bild — und genau das
+      verhindern wir, indem wir sie getrennt halten. Wer eine Hälfte in die Hände
+      bekäme, hielte nur eine sinnlose Hälfte.
+    </p>
+    <h3>Wiederherstellung ohne E-Mail</h3>
+    <p>
+      Ein verlorenes Gerät darf weder Datenverlust noch eine E-Mail-Pflicht bedeuten.
+      Beim Anlegen erzeugt die App einen persönlichen <strong>Wiederherstellungs-Schlüssel</strong>
+      (z. B. eine merkbare Wortfolge). Damit lässt sich ein optionaler, Ende-zu-Ende
+      verschlüsselter Cloud-Verlauf auf einem neuen Gerät zurückholen — ganz ohne
+      E-Mail-Adresse, und ohne dass ein Server jemals den Klartext sieht.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>4 · Eine Festung pro App</h2>
+    <p>
+      Jedes Produkt erhält eine ganz eigene, abgeschottete Datenwelt mit eigenen
+      Schlüsseln. Das ist gelebte Sicherheit durch <strong>Kompartimentierung</strong> —
+      und zugleich ein Datenschutzgewinn, weil ein App-übergreifendes Profil technisch
+      gar nicht erst entstehen kann.
+    </p>
+    <table>
+      <tr><th>Ebene</th><th>Maßnahme</th><th>Wirkung</th></tr>
+      <tr><td>Hosting</td><td>Eigenes Projekt/Konto pro App, in der EU-Region</td><td>Ein Vorfall bei einer App betrifft keine andere.</td></tr>
+      <tr><td>Datenbank</td><td>Eigene Datenbank und Zugangsdaten pro App</td><td>Getrennte Speicher, keine geteilten Schlüssel.</td></tr>
+      <tr><td>Schlüssel</td><td>Eigener Hauptschlüssel pro App, eigener Datenschlüssel pro Person</td><td>Ein einzelner Schlüssel öffnet niemals alles.</td></tr>
+    </table>
+    <div class="callout">
+      <p><span class="h">Bewusst kein gemeinsames Nutzerkonto über alle Apps.</span>
+      Ein zentraler „Eunavia-Account" wäre bequem — aber für Gesundheitsdaten genau das
+      Falsche: Er schüfe einen einzigen Topf, dessen Leck alles offenlegt. Stattdessen
+      bleibt jede App ihre eigene Festung.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>5 · Verschlüsselung &amp; „wirklich löschen"</h2>
+    <p>Schutz auf jeder Stufe — und Löschen, das auch in Sicherungskopien wirkt.</p>
+    <table>
+      <tr><th>Stufe</th><th>Schutz</th><th>Bewahrt vor</th></tr>
+      <tr><td>Auf dem Gerät</td><td>Starke Verschlüsselung, Schlüssel im sicheren Gerätespeicher</td><td>Verlorenes oder gestohlenes Gerät</td></tr>
+      <tr><td>Bei der Übertragung</td><td>Moderne Transportverschlüsselung</td><td>Mitlesen im Netz</td></tr>
+      <tr><td>In der Cloud (optional)</td><td>Ende-zu-Ende: der Server sieht nur unlesbaren Geheimtext</td><td>Server-Vorfälle, neugierige Betreiber</td></tr>
+    </table>
+    <h3>Löschen, das wirklich löscht</h3>
+    <p>
+      „Recht auf Löschung" wird oft schlecht umgesetzt, weil Daten in Backups
+      überleben. Bei uns gilt: Statt Datensätze mühsam zu suchen, vernichten wir den
+      persönlichen Schlüssel. Ohne ihn wird der gesamte Bestand dieser Person — auch in
+      jeder Sicherungskopie — unwiederbringlich unlesbar. Ein Tap, sofort wirksam.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>6 · Notfall ohne Funktionsverlust</h2>
+    <p>
+      Datenschutz darf die Funktion nicht ausbremsen — und es braucht eine schnelle
+      Notfallfunktion. Beides ist kein Widerspruch: Ein lokaler Notfallpfad ist sowohl
+      schneller <em>als auch</em> datensparsamer.
+    </p>
+    <ul class="clean">
+      <li>Die Soforthilfe in kritischen Momenten läuft komplett <strong>offline und ohne Konto</strong>.</li>
+      <li>Wichtige Krisenressourcen (z. B. Notruf- und Hilfsnummern) liegen fest in der App — kein Online-Abruf nötig.</li>
+      <li>Eine optionale Vertrauensperson wird nur lokal hinterlegt; Auslösen ruft direkt an, ohne Umweg über einen Server.</li>
+      <li>Bei Warnzeichen verweist die App freundlich, aber konsequent auf menschliche und ärztliche Hilfe — statt selbst zu „therapieren".</li>
+    </ul>
+    <div class="callout">
+      <p><span class="h">Kernaussage.</span> Weil die wirksamsten Funktionen ohnehin auf
+      dem Gerät laufen, ist die datenschutzfreundliche Architektur zugleich die
+      schnellste und robusteste. Dein Vorteil und der Datenschutz zeigen in dieselbe
+      Richtung.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>7 · Was wir niemals tun</h2>
+    <ul class="clean never">
+      <li>Deine Daten verkaufen oder an Dritte weitergeben.</li>
+      <li>Werbe- oder Tracking-Dienste in unsere Apps einbauen.</li>
+      <li>Ein gemeinsames Profil über alle Apps hinweg anlegen.</li>
+      <li>Dich zu einer E-Mail-Adresse oder einem Login zwingen.</li>
+      <li>Lebenswichtige Hilfe von einer Internetverbindung abhängig machen.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>8 · Nachprüfbar — unabhängige Prüfung</h2>
+    <p>
+      Wir möchten nicht nur sagen, dass deine Daten sicher sind — wir richten unsere
+      Gesundheits-Apps auf anerkannte, unabhängige Siegel und Standards aus.
+    </p>
+    <table>
+      <tr><th>Siegel / Standard</th><th>Was es belegt</th></tr>
+      <tr><td><b>TÜV-geprüfte App</b></td><td>Herstellerunabhängiges Gütesiegel: Bedienbarkeit, Rechtskonformität und Datensicherheit — das vertraute Prüfzeichen.</td></tr>
+      <tr><td><b>BSI TR-03161</b></td><td>Technische Richtlinie des Bundesamts für Sicherheit in der Informationstechnik für Gesundheits-Apps (App, Server, Übertragung).</td></tr>
+      <tr><td><b>ISO/IEC 27001</b></td><td>Internationaler Standard für ein durchdachtes Informationssicherheits-Management — klare Regeln und Verantwortlichkeiten.</td></tr>
+    </table>
+    <p class="meta">
+      Eunavia steht am Anfang dieses Weges. Wir bauen Datenschutz von der ersten
+      Codezeile an ein und gehen die Zertifizierungen Schritt für Schritt an — zuerst
+      dort, wo die Daten am sensibelsten sind.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>9 · Glossar</h2>
+    <table>
+      <tr><th>Begriff</th><th>Bedeutung</th></tr>
+      <tr><td><b>Split-Identity</b></td><td>Trennung von „Wer du bist" und „Was du einträgst" in zwei Tresore, verbunden nur durch ein anonymes Kürzel.</td></tr>
+      <tr><td><b>Ende-zu-Ende</b></td><td>Verschlüsselung, bei der nur deine Geräte lesen können — der Server speichert ausschließlich unlesbaren Geheimtext.</td></tr>
+      <tr><td><b>Crypto-Shredding</b></td><td>Löschen durch Vernichten des Schlüssels — die Daten werden unwiederbringlich unlesbar, auch in Backups.</td></tr>
+      <tr><td><b>Passkey</b></td><td>Gerätegebundene, phishing-resistente Anmeldung ohne Passwort und ohne E-Mail (z. B. per Fingerabdruck).</td></tr>
+      <tr><td><b>Kompartimentierung</b></td><td>Strikte Trennung in abgeschottete Bereiche, damit ein Vorfall nie alles auf einmal betrifft.</td></tr>
+    </table>
+  </div>
+
+  <footer class="doc">
+    Eunavia · Datenschutz &amp; Vertrauen · Stand Juni 2026 · eunavia.de —
+    Diese Übersicht erklärt unser Schutzkonzept allgemeinverständlich und ist keine
+    medizinische oder rechtsverbindliche Beratung.
+  </footer>
+
+</body>
+</html>

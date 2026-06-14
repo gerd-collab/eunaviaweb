@@ -23,6 +23,10 @@ setBrand('tagline', BRAND.tagline)
 applyI18n(datenschutzEN, lang)
 if (lang === 'en') document.title = datenschutzEN['ds.meta.title']
 
+/* ---- Download-PDF sprachabhängig (href deckt die i18n-Engine nicht ab) ---- */
+const pdf = document.getElementById('pdfDownload')
+if (pdf) pdf.href = lang === 'en' ? '/eunavia-privacy-concept.pdf' : '/eunavia-datenschutz-konzept.pdf'
+
 /* ---- Theme: Persistenz + Toggle (Default Dark) ---- */
 const root = document.documentElement
 const stored = localStorage.getItem('eunavia-theme')
