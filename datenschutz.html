@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="de" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" data-i18n-content="ds.meta.desc" content="Datenschutz bei Eunavia – verständlich erklärt. Anonym von Anfang an, Daten auf deinem Gerät, getrennte Tresore, kein Datenhandel. Vertrauen, das man nachprüfen kann." />
+    <meta name="theme-color" content="#07110D" />
+    <meta property="og:title" content="Datenschutz – Eunavia" />
+    <meta property="og:description" data-i18n-content="ds.meta.ogDesc" content="Wie Eunavia deine sensibelsten Daten schützt: anonym, verschlüsselt, auf deinem Gerät – und unabhängig prüfbar." />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <title>Datenschutz – Eunavia</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Zum Inhalt springen</a>
+
+    <!-- Atmosphäre: driftende Aurora + Grain -->
+    <div class="aurora" aria-hidden="true">
+      <span class="aurora__blob aurora__blob--1"></span>
+      <span class="aurora__blob aurora__blob--2"></span>
+      <span class="aurora__blob aurora__blob--3"></span>
+    </div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <div class="container nav">
+        <a class="brand brand--lockup" href="/" aria-label="Eunavia – Human Centered, Startseite">
+          <img class="brand__mark" src="/logo-mark.svg" alt="" width="42" height="42" />
+          <span class="brand__text">
+            <span class="brand__word" data-brand="name">Eunavia</span>
+            <span class="brand__tagline" data-brand="tagline">Human Centered</span>
+          </span>
+        </a>
+        <nav class="nav__links" aria-label="Hauptnavigation">
+          <a href="/#philosophie" data-i18n="nav.philosophy">Philosophie</a>
+          <a href="/#produkte" data-i18n="nav.products">Produkte</a>
+          <a href="/#prinzipien" data-i18n="nav.principles">Prinzipien</a>
+          <a href="/datenschutz" aria-current="page" data-i18n="nav.privacy">Datenschutz</a>
+        </nav>
+        <div class="nav__actions">
+          <button class="theme-toggle" id="themeToggle" type="button" data-i18n-label="theme.label" aria-label="Hell-/Dunkelmodus umschalten" data-i18n-title="theme.title" title="Hell-/Dunkelmodus">
+            <span class="theme-toggle__icon" aria-hidden="true"></span>
+          </button>
+          <a class="btn btn--gold nav__cta" href="/#kontakt" data-i18n="nav.cta">Gespräch anfragen</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="page-hero">
+        <div class="container page-hero__inner">
+          <p class="eyebrow reveal" data-i18n="ds.hero.eyebrow">Datenschutz &amp; Vertrauen</p>
+          <h1 class="page-hero__title reveal" data-i18n="ds.hero.title">
+            Deine Daten <em>gehören dir.</em>
+          </h1>
+          <p class="page-hero__lead reveal" data-i18n="ds.hero.lead">
+            Unsere Apps begleiten Menschen in sehr persönlichen Momenten — beim
+            Rauchstopp, beim Loslassen, in Fragen der eigenen Gesundheit. Das sind
+            die schützenswertesten Daten, die es gibt. Darum ist Datenschutz bei
+            Eunavia kein nachträgliches Feature, sondern das Fundament, auf dem
+            alles steht.
+          </p>
+        </div>
+      </section>
+
+      <!-- LEITSATZ -->
+      <section class="section manifest">
+        <div class="container">
+          <p class="eyebrow reveal" data-i18n="ds.tenet.eyebrow">Unser Versprechen</p>
+          <blockquote class="tenet reveal" data-i18n="ds.tenet.quote">
+            Vertrauen ist kein Feature.
+            <em>Es ist die Grundlage.</em>
+          </blockquote>
+          <p class="tenet__body reveal" data-i18n="ds.tenet.body">
+            Was du unseren Apps anvertraust, wird bei uns niemals zur Ware. Wir haben
+            Datenschutz von der ersten Codezeile an mitgedacht — nicht als Häkchen für
+            die Rechtsabteilung, sondern als Haltung. <strong>Du sollst dich begleiten
+            lassen können, ohne dich erklären zu müssen.</strong> Die folgenden
+            Versprechen sind keine Absichtserklärung, sondern in der Technik unserer
+            Produkte fest verankert.
+          </p>
+        </div>
+      </section>
+
+      <!-- PRINZIPIEN / VERSPRECHEN -->
+      <section class="section principles">
+        <div class="container">
+          <p class="eyebrow reveal" data-i18n="ds.promise.eyebrow">Acht Versprechen</p>
+          <h2 class="display reveal" data-i18n="ds.promise.title">Wie wir deine Daten <em>schützen.</em></h2>
+          <div class="principles__list">
+            <article class="principle reveal">
+              <span class="principle__idx">i</span>
+              <h3 data-i18n="ds.p1.h">Anonym von Anfang an</h3>
+              <p data-i18n="ds.p1.p">Kein Konto, keine E-Mail, kein echter Name. Unsere Apps funktionieren, ohne dass du dich zu erkennen geben musst. Es geht um deinen Weg — nicht um deine Identität.</p>
+            </article>
+            <article class="principle reveal">
+              <span class="principle__idx">ii</span>
+              <h3 data-i18n="ds.p2.h">Auf deinem Gerät zuhause</h3>
+              <p data-i18n="ds.p2.p">Deine sensiblen Daten entstehen und bleiben verschlüsselt auf deinem Gerät. Eine Cloud nutzen wir nur, wenn du es möchtest — und dann so verschlüsselt, dass selbst wir den Inhalt nie sehen können.</p>
+            </article>
+            <article class="principle reveal">
+              <span class="principle__idx">iii</span>
+              <h3 data-i18n="ds.p3.h">Zwei getrennte Tresore</h3>
+              <p data-i18n="ds.p3.p">Wer du bist und was du über deine Gesundheit einträgst, speichern wir niemals zusammen. Beide Hälften sind nur über ein anonymes Kürzel verbunden, das für sich genommen nichts verrät.</p>
+            </article>
+            <article class="principle reveal">
+              <span class="principle__idx">iv</span>
+              <h3 data-i18n="ds.p4.h">Eine Festung pro App</h3>
+              <p data-i18n="ds.p4.p">Jedes Produkt hat seine eigene, abgeschottete Datenwelt mit eigenen Schlüsseln. Es gibt kein gemeinsames Profil über die Apps hinweg — was du in einer App tust, bleibt dort.</p>
+            </article>
+            <article class="principle reveal">
+              <span class="principle__idx">v</span>
+              <h3 data-i18n="ds.p5.h">Verschlüsselt — und wirklich löschbar</h3>
+              <p data-i18n="ds.p5.p">Alles ist verschlüsselt. Und wenn du löschst, vernichten wir den Schlüssel: Deine Daten werden unwiederbringlich unlesbar — auch in jeder Sicherungskopie. Löschen heißt bei uns wirklich gelöscht.</p>
+            </article>
+            <article class="principle reveal">
+              <span class="principle__idx">vi</span>
+              <h3 data-i18n="ds.p6.h">Notfall ohne Netz</h3>
+              <p data-i18n="ds.p6.p">Die Soforthilfe in kritischen Momenten funktioniert komplett offline und ohne Konto. Datenschutz darf lebenswichtige Hilfe niemals ausbremsen — im Gegenteil, sie ist dadurch sogar schneller.</p>
+            </article>
+            <article class="principle reveal">
+              <span class="principle__idx">vii</span>
+              <h3 data-i18n="ds.p7.h">Kein Datenhandel, keine Tracker</h3>
+              <p data-i18n="ds.p7.p">Null Werbe-Netzwerke, null fremde Analyse-Dienste. Wir verkaufen deine Daten nicht und geben sie nicht weiter. Unser Geschäft ist deine Genesung — nicht deine Aufmerksamkeit.</p>
+            </article>
+            <article class="principle reveal">
+              <span class="principle__idx">viii</span>
+              <h3 data-i18n="ds.p8.h">Unabhängig geprüft</h3>
+              <p data-i18n="ds.p8.p">Vertrauen, das man nachprüfen kann: Wir lassen unsere Apps unabhängig zertifizieren — vom TÜV-Gütesiegel bis zu den strengen Sicherheitsstandards für digitale Gesundheitsanwendungen.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPLIT-IDENTITY ERKLÄRT -->
+      <section class="section">
+        <div class="container">
+          <p class="eyebrow reveal" data-i18n="ds.split.eyebrow">So funktioniert's</p>
+          <h2 class="display reveal" data-i18n="ds.split.title">Zwei Tresore, die sich <em>nicht kennen.</em></h2>
+          <p class="lead reveal" data-i18n="ds.split.lead">
+            Das klingt technisch, ist aber eine einfache Idee. Statt alles über dich
+            an einer Stelle zu sammeln, bewahren wir es in zwei strikt getrennten
+            Tresoren auf — und keiner kennt den Inhalt des anderen.
+          </p>
+
+          <div class="vault-duo reveal">
+            <div class="vault">
+              <span class="vault__tag" data-i18n="ds.split.vault1.tag">Identitäts-Tresor</span>
+              <h3 class="vault__name" data-i18n="ds.split.vault1.name">Wer du bist</h3>
+              <p data-i18n="ds.split.vault1.p">Kennt — wenn überhaupt — nur einen anonymen Zugang, etwa per Fingerabdruck oder Gesichts-Entsperrung deines Geräts. <strong>Keine Gesundheitsdaten.</strong> Kein Name, keine E-Mail nötig.</p>
+            </div>
+            <div class="vault__token" aria-hidden="true">
+              <span class="vault__token-rule"></span>
+              <span class="vault__token-chip">anonymes&nbsp;Kürzel</span>
+              <span class="vault__token-label" data-i18n="ds.split.token">verbindet beide — verrät allein nichts</span>
+              <span class="vault__token-rule"></span>
+            </div>
+            <div class="vault">
+              <span class="vault__tag" data-i18n="ds.split.vault2.tag">Gesundheits-Tresor</span>
+              <h3 class="vault__name" data-i18n="ds.split.vault2.name">Was du einträgst</h3>
+              <p data-i18n="ds.split.vault2.p">Speichert deine Einträge, Fortschritte und Verläufe — aber <strong>ohne zu wissen, wer du bist.</strong> Kein Name, keine E-Mail, kein Gerät. Nur der Inhalt, von der Person gelöst.</p>
+            </div>
+          </div>
+
+          <p class="vault-note reveal" data-i18n="ds.split.note">
+            Erst beide Hälften zusammen ergäben ein vollständiges Bild — und genau das
+            verhindern wir, indem wir sie getrennt halten. <strong>Wer eine Hälfte in
+            die Hände bekäme, hielte nur eine sinnlose Hälfte in den Händen.</strong>
+            Verlierst du dein Gerät, holt ein persönlicher Wiederherstellungs-Schlüssel
+            alles zurück — ganz ohne E-Mail-Adresse.
+          </p>
+        </div>
+      </section>
+
+      <!-- WAS WIR NIEMALS TUN -->
+      <section class="section">
+        <div class="container">
+          <p class="eyebrow reveal" data-i18n="ds.never.eyebrow">Klare Grenzen</p>
+          <h2 class="display reveal" data-i18n="ds.never.title">Was wir <em>niemals</em> tun.</h2>
+          <ul class="never reveal">
+            <li data-i18n="ds.never.1">Deine Daten verkaufen oder an Dritte weitergeben.</li>
+            <li data-i18n="ds.never.2">Werbe- oder Tracking-Dienste in unsere Apps einbauen.</li>
+            <li data-i18n="ds.never.3">Ein gemeinsames Profil über alle Apps hinweg anlegen.</li>
+            <li data-i18n="ds.never.4">Dich zu E-Mail-Adresse oder Login zwingen.</li>
+            <li data-i18n="ds.never.5">Lebenswichtige Hilfe von einer Internetverbindung abhängig machen.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ZERTIFIZIERUNG -->
+      <section class="section">
+        <div class="container">
+          <p class="eyebrow reveal" data-i18n="ds.cert.eyebrow">Nachprüfbar</p>
+          <h2 class="display reveal" data-i18n="ds.cert.title">Vertrauen, das man <em>prüfen</em> kann.</h2>
+          <p class="lead reveal" data-i18n="ds.cert.lead">
+            Wir möchten nicht nur sagen, dass deine Daten sicher sind — wir lassen es
+            unabhängig bestätigen. Das sind die Siegel und Standards, auf die wir
+            unsere Gesundheits-Apps ausrichten.
+          </p>
+          <div class="cert-grid reveal">
+            <article class="cert">
+              <span class="cert__seal" aria-hidden="true">✓</span>
+              <p class="cert__kicker" data-i18n="ds.cert1.kicker">Gütesiegel</p>
+              <h3 class="cert__name" data-i18n="ds.cert1.name">TÜV-geprüfte App</h3>
+              <p data-i18n="ds.cert1.p">Ein herstellerunabhängiges Siegel, das Bedienbarkeit, Rechtskonformität und Datensicherheit prüft — dasselbe Prüfzeichen, das man von vertrauten Marken kennt.</p>
+            </article>
+            <article class="cert">
+              <span class="cert__seal" aria-hidden="true">✓</span>
+              <p class="cert__kicker" data-i18n="ds.cert2.kicker">Sicherheitsstandard</p>
+              <h3 class="cert__name" data-i18n="ds.cert2.name">BSI TR-03161</h3>
+              <p data-i18n="ds.cert2.p">Die technische Richtlinie des Bundesamts für Sicherheit in der Informationstechnik für Gesundheits-Apps — Maßstab für App, Server und Datenübertragung.</p>
+            </article>
+            <article class="cert">
+              <span class="cert__seal" aria-hidden="true">✓</span>
+              <p class="cert__kicker" data-i18n="ds.cert3.kicker">Informationssicherheit</p>
+              <h3 class="cert__name" data-i18n="ds.cert3.name">ISO 27001</h3>
+              <p data-i18n="ds.cert3.p">Der internationale Standard für ein durchdachtes Informationssicherheits-Management — klare Regeln und Verantwortlichkeiten im Umgang mit Daten.</p>
+            </article>
+          </div>
+          <p class="cert-disclaimer reveal" data-i18n="ds.cert.note">
+            Eunavia steht am Anfang dieses Weges. Wir bauen Datenschutz von der ersten
+            Codezeile an ein und gehen die Zertifizierungen Schritt für Schritt an —
+            zuerst dort, wo die Daten am sensibelsten sind.
+          </p>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section cta" id="kontakt">
+        <div class="container cta__inner reveal">
+          <img class="cta__mark" src="/logo-mark.svg" alt="" width="72" height="72" />
+          <h2 class="cta__title" data-i18n="ds.cta.title">Fragen zu deinen Daten?</h2>
+          <p class="cta__lead" data-i18n="ds.cta.lead">
+            Transparenz endet nicht bei dieser Seite. Wenn du wissen möchtest, wie wir
+            mit deinen Daten umgehen, schreib uns — wir antworten ehrlich.
+          </p>
+          <a class="btn btn--gold btn--lg" href="mailto:gerd.wenning@gmail.com?subject=Datenschutz%20bei%20Eunavia" data-i18n="ds.cta.btn">
+            Kontakt aufnehmen
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <a class="brand brand--sm" href="/" aria-label="Eunavia">
+            <img class="brand__mark" src="/logo-mark.svg" alt="" width="32" height="32" />
+            <span class="brand__word" data-brand="name">Eunavia</span>
+          </a>
+          <p class="footer__claim" data-brand="claim" data-i18n="footer.claim">Der gute Weg zum gelingenden Leben.</p>
+        </div>
+        <nav class="footer__col" aria-label="Produkte">
+          <h4 data-i18n="footer.products">Produkte</h4>
+          <a href="https://www.cyberschooling.eu/" target="_blank" rel="noopener" data-i18n="footer.worksheets">Arbeitsblätter</a>
+          <a href="/fahrerwohl">Fahrerwohl</a>
+          <a href="https://stopsmoking.eunavia.de/" target="_blank" rel="noopener">StopSmoking</a>
+          <a href="https://klar.eunavia.de/" target="_blank" rel="noopener">Klar</a>
+          <a href="https://leben.eunavia.de/welcome" target="_blank" rel="noopener">Leben</a>
+        </nav>
+        <nav class="footer__col" aria-label="Unternehmen">
+          <h4 data-i18n="footer.company">Unternehmen</h4>
+          <a href="/#philosophie" data-i18n="nav.philosophy">Philosophie</a>
+          <a href="/#produkte" data-i18n="nav.products">Produkte</a>
+          <a href="/datenschutz" data-i18n="nav.privacy">Datenschutz</a>
+          <a href="mailto:gerd.wenning@gmail.com?subject=Eunavia" data-i18n="nav.contact">Kontakt</a>
+        </nav>
+      </div>
+      <div class="container footer__base">
+        <p class="footer__legal">© <span id="year">2026</span> <span data-brand="name">Eunavia</span> · <span data-brand="domain">eunavia.com</span></p>
+        <p class="footer__legal">Human Centered</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/datenschutz.js"></script>
+  </body>
+</html>

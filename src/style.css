@@ -467,6 +467,107 @@ body {
   .footer__grid { grid-template-columns: 1fr; }
 }
 
+/* ============================================================
+   Datenschutz-Seite (datenschutz.html)
+   Nutzt dieselben Tokens/Chrome wie die Startseite; nur die
+   seiten-eigenen Bausteine sind hier ergänzt.
+   ============================================================ */
+
+/* Kompakter Seiten-Hero ohne Video */
+.page-hero { position: relative; padding: clamp(132px, 19vh, 210px) 0 clamp(48px, 7vw, 88px); overflow: hidden; }
+.page-hero__inner { max-width: 880px; }
+.page-hero__title {
+  font-family: var(--serif); font-weight: 500;
+  font-size: clamp(2.6rem, 7.4vw, 5rem); line-height: 1.0; letter-spacing: -0.032em;
+  font-optical-sizing: none; font-variation-settings: "opsz" var(--opsz-display);
+  margin: 16px 0 28px;
+}
+.page-hero__title em {
+  font-style: italic; font-weight: 400;
+  background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.page-hero__lead { max-width: 60ch; font-size: clamp(1.12rem, 1.7vw, 1.32rem); color: var(--ink-dim); }
+
+/* Leitsatz-Block (Manifest-Variante) */
+.tenet { max-width: 24ch; }
+.tenet__quote {
+  font-family: var(--serif); font-weight: 400;
+  font-size: clamp(1.9rem, 5vw, 3.6rem); line-height: 1.1; letter-spacing: -0.02em;
+  font-optical-sizing: none; font-variation-settings: "opsz" var(--opsz-display);
+  margin: 8px 0 0; text-wrap: balance;
+}
+.tenet__quote em {
+  font-style: italic;
+  background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.tenet__body { max-width: 62ch; margin-top: 36px; color: var(--ink-dim); font-size: 1.12rem; }
+.tenet__body strong { color: var(--ink); font-weight: 600; }
+
+/* Split-Identity: zwei Tresore + verbindendes Token */
+.vault-duo {
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: stretch;
+  gap: clamp(14px, 2.6vw, 30px); margin-top: 52px;
+}
+.vault {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: clamp(26px, 3vw, 40px); box-shadow: var(--shadow); backdrop-filter: blur(10px);
+}
+.vault__tag {
+  display: block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 14px;
+}
+.vault__name { font-family: var(--serif); font-weight: 600; font-size: 1.42rem; letter-spacing: -0.01em; margin-bottom: 12px; }
+.vault p { color: var(--ink-dim); font-size: 1.02rem; }
+.vault p + p { margin-top: 12px; }
+.vault__token {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 12px; text-align: center; min-width: 92px;
+}
+.vault__token-rule { width: 1px; flex: 1 1 auto; min-height: 26px; background: linear-gradient(var(--gold), transparent); }
+.vault__token-rule:last-child { background: linear-gradient(transparent, var(--gold)); }
+.vault__token-chip {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; font-size: 0.78rem;
+  white-space: nowrap; padding: 9px 15px; border-radius: 999px;
+  border: 1px dashed var(--line); background: var(--surface-2); color: var(--gold);
+}
+.vault__token-label { font-size: 0.78rem; color: var(--ink-dim); max-width: 14ch; line-height: 1.4; }
+.vault-note { margin-top: 40px; max-width: 64ch; color: var(--ink-dim); font-size: 1.08rem; }
+.vault-note strong { color: var(--ink); font-weight: 600; }
+
+/* „Was wir niemals tun" — Liste mit ×-Marken */
+.never { list-style: none; display: grid; gap: 16px; margin-top: 44px; max-width: 780px; }
+.never li { position: relative; padding-left: 46px; font-size: 1.12rem; color: var(--ink); line-height: 1.5; }
+.never li::before {
+  content: "\00d7"; position: absolute; left: 0; top: -1px;
+  width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%;
+  background: color-mix(in srgb, #ff5f57 20%, transparent); color: #ff8a84;
+  font-weight: 700; font-size: 1.05rem;
+}
+
+/* Zertifizierungs-Karten */
+.cert-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 52px; }
+.cert {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: clamp(26px, 3vw, 36px);
+}
+.cert__seal {
+  width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--grad-gold); color: #1c1408; font-weight: 700; font-size: 1.2rem;
+  box-shadow: 0 12px 30px -12px rgba(227, 192, 136, 0.6);
+}
+.cert__name { font-family: var(--serif); font-weight: 600; font-size: 1.3rem; letter-spacing: -0.01em; margin: 18px 0 6px; }
+.cert__kicker { font-size: 0.74rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); }
+.cert p { color: var(--ink-dim); font-size: 1rem; margin-top: 10px; }
+.cert-disclaimer { margin-top: 32px; max-width: 64ch; color: var(--ink-dim); font-size: 0.98rem; font-style: italic; }
+
+@media (max-width: 900px) {
+  .vault-duo { grid-template-columns: 1fr; }
+  .vault__token { flex-direction: row; min-width: 0; padding: 4px 0; }
+  .vault__token-rule { width: auto; height: 1px; flex: 1 1 auto; min-height: 0; min-width: 24px; background: linear-gradient(90deg, var(--gold), transparent); }
+  .vault__token-rule:last-child { background: linear-gradient(90deg, transparent, var(--gold)); }
+  .cert-grid { grid-template-columns: 1fr; }
+}
+
 /* ---------- Reduced Motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

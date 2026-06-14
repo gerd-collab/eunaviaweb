@@ -17,6 +17,7 @@ export const homeEN = {
   'nav.philosophy': 'Philosophy',
   'nav.products': 'Products',
   'nav.principles': 'Principles',
+  'nav.privacy': 'Privacy',
   'nav.contact': 'Contact',
   'nav.cta': 'Request a conversation',
   'theme.label': 'Toggle light/dark mode',

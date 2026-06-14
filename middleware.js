@@ -18,9 +18,9 @@
 
 import { geolocation, next } from '@vercel/functions'
 
-// Nur die beiden einsprachigen HTML-Einstiege abfangen — Assets bleiben außen vor.
+// Nur die einsprachigen HTML-Einstiege abfangen — Assets bleiben außen vor.
 export const config = {
-  matcher: ['/', '/fahrerwohl'],
+  matcher: ['/', '/fahrerwohl', '/datenschutz'],
 }
 
 const GERMAN_SPEAKING = new Set(['DE', 'AT', 'CH', 'LI'])
