@@ -65,7 +65,9 @@ Vite 7 (Multi-Page: `index.html` + `fahrerwohl.html` + `datenschutz.html`) + Van
 
 ## Deployment
 
-Vercel (`vercel.json`: framework `vite`). Rewrites: `/fahrerwohl` → `/fahrerwohl.html`, `/datenschutz` → `/datenschutz.html`, alle übrigen Routen auf `/index.html` (Reihenfolge zählt — saubere Routen **vor** dem Catch-all). Domains: **eunavia.com** (Englisch) / **eunavia.de** (Deutsch) — dieselbe Codebase auf beiden Domains; die Sprache hängt **allein an der Domain**.
+Vercel (`vercel.json`: framework `vite`). Rewrites: `/fahrerwohl` → `/fahrerwohl.html`, `/datenschutz` **und** `/privacy` → `/datenschutz.html`, alle übrigen Routen auf `/index.html` (Reihenfolge zählt — saubere Routen **vor** dem Catch-all). Domains: **eunavia.com** (Englisch) / **eunavia.de** (Deutsch) — dieselbe Codebase auf beiden Domains; die Sprache hängt **allein an der Domain**.
+
+**Sichtbare Seitenpfade sind sprachabhängig.** Deutsche Routen haben eine englische Entsprechung (`/datenschutz` → `/privacy`), gepflegt in `ROUTE_EN` in `src/i18n.js`. `localizeRoutes(lang)` schreibt bei Englisch alle internen `<a href>` um (Aufruf nach `applyI18n` in `main.js`/`datenschutz.js`). **Beide** Pfade brauchen ein Rewrite in `vercel.json` auf dieselbe HTML-Datei — kein Redirect (der würde auf beiden Domains greifen und `.de` brechen). Neue Route mit deutschem Namen → Eintrag in `ROUTE_EN` **und** zweites Rewrite ergänzen.
 
 **Kein Geo-Routing.** `.de` ist immer Deutsch, `.com` immer Englisch — unabhängig vom Standort des Besuchers. Es gibt **keine** standortbasierte Umleitung (kein `middleware.js`, keine `@vercel/functions`-Abhängigkeit). Wer eine bestimmte Sprache will, ruft die passende Domain auf; zum Testen erzwingbar mit `?lang=en` / `?lang=de`.
 

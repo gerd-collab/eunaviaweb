@@ -6,7 +6,7 @@
 
 import './style.css'
 import { BRAND } from './config.js'
-import { detectLang, applyI18n } from './i18n.js'
+import { detectLang, applyI18n, localizeRoutes } from './i18n.js'
 import { datenschutzEN } from './lang/datenschutz.en.js'
 
 const lang = detectLang()
@@ -21,6 +21,7 @@ setBrand('tagline', BRAND.tagline)
 
 /* ---- Sprache anwenden (Deutsch = No-Op via HTML, Englisch ersetzt) ---- */
 applyI18n(datenschutzEN, lang)
+localizeRoutes(lang) // interne Routen englisch (/datenschutz → /privacy)
 if (lang === 'en') document.title = datenschutzEN['ds.meta.title']
 
 /* ---- Download-PDF sprachabhängig (href deckt die i18n-Engine nicht ab) ---- */

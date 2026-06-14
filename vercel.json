@@ -6,6 +6,7 @@
   "rewrites": [
     { "source": "/fahrerwohl", "destination": "/fahrerwohl.html" },
     { "source": "/datenschutz", "destination": "/datenschutz.html" },
+    { "source": "/privacy", "destination": "/datenschutz.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

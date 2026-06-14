@@ -1,6 +1,6 @@
 import './style.css'
 import { BRAND } from './config.js'
-import { detectLang, applyI18n } from './i18n.js'
+import { detectLang, applyI18n, localizeRoutes } from './i18n.js'
 import { homeEN } from './lang/home.en.js'
 
 const lang = detectLang()
@@ -16,6 +16,7 @@ document.title = `${BRAND.name} – ${BRAND.tagline}`
 
 /* ---- Sprache anwenden (NACH data-brand, damit EN den Claim überschreibt) ---- */
 applyI18n(homeEN, lang)
+localizeRoutes(lang) // interne Routen englisch (/datenschutz → /privacy)
 
 /* ---- Theme: Persistenz + Toggle (Default Dark) ---- */
 const root = document.documentElement

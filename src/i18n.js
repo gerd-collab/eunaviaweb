@@ -26,6 +26,16 @@ const ATTR_MAP = {
   'data-i18n-content': 'content',
 }
 
+/**
+ * Deutsche Routen → englische Entsprechungen.
+ * Auf .com (bzw. ?lang=en) sollen die sichtbaren Seitenpfade englisch sein.
+ * Die zugehörigen Rewrites liegen in vercel.json (beide Pfade liefern dieselbe
+ * Datei; auf .com rendert sie automatisch Englisch).
+ */
+const ROUTE_EN = {
+  '/datenschutz': '/privacy',
+}
+
 /** Ermittelt die aktive Sprache aus Query-Param-Override oder Host. */
 export function detectLang() {
   const override = new URLSearchParams(location.search).get('lang')
@@ -59,5 +69,18 @@ export function applyI18n(dict, lang = detectLang()) {
       const val = dict[el.getAttribute(dataAttr)]
       if (val != null) el.setAttribute(realAttr, val)
     })
+  }
+}
+
+/**
+ * Schreibt interne Routen-Links auf die Zielsprache um. Deutsch ist No-Op
+ * (das HTML trägt die deutschen Routen); für Englisch ersetzt die Funktion
+ * z. B. /datenschutz → /privacy. Aufruf zusätzlich zu applyI18n().
+ * @param {string} [lang]  Sprache; default: detectLang()
+ */
+export function localizeRoutes(lang = detectLang()) {
+  if (lang !== 'en') return
+  for (const [de, en] of Object.entries(ROUTE_EN)) {
+    document.querySelectorAll(`a[href="${de}"]`).forEach((a) => a.setAttribute('href', en))
   }
 }
