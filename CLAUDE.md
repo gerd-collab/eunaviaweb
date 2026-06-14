@@ -24,7 +24,7 @@ Keine Tests, kein Linter, kein TypeScript konfiguriert — bewusst minimal gehal
 
 ## Stack & Architektur
 
-Vite 7 (Multi-Page: `index.html` + `fahrerwohl.html`) + Vanilla HTML/CSS/JS. Quelldateien mit klarer Rolle:
+Vite 7 (Multi-Page: `index.html` + `fahrerwohl.html` + `datenschutz.html`) + Vanilla HTML/CSS/JS. Quelldateien mit klarer Rolle:
 
 - **`index.html`** — der gesamte Seiteninhalt der Startseite, hartkodiert auf **Deutsch** (Hero mit Video, Manifest, 5 Produkt-`<article>`, Stats, Prinzipien, CTA, Footer). Inhaltliche Änderungen passieren hier. Englisch kommt aus dem Wörterbuch (siehe i18n).
 - **`fahrerwohl.html`** — eigenständige Produkt-Unterseite (`/fahrerwohl`), komplett standalone: eigenes inline-`<style>`, eigenes inline reveal-`<script>`, eigene Fonts (Barlow). Nutzt **nicht** `main.js`/`style.css`.
@@ -34,7 +34,7 @@ Vite 7 (Multi-Page: `index.html` + `fahrerwohl.html`) + Vanilla HTML/CSS/JS. Que
 - **`src/lang/home.en.js`** / **`src/lang/fahrerwohl.en.js`** — englische Wörterbücher je Seite.
 - **`src/fahrerwohl.js`** — Modul-Entry der Produktseite, bindet Engine + Fahrerwohl-Wörterbuch ein.
 - **`src/style.css`** — komplettes Designsystem der Startseite via CSS Custom Properties.
-- **`middleware.js`** — Vercel Edge Routing Middleware fürs Geo-Routing (siehe Deployment).
+- **`datenschutz.html`** + **`src/datenschutz.js`** + **`src/lang/datenschutz.en.js`** — Datenschutz-Erklärseite (`/datenschutz`). Teilt **`style.css`** und die i18n-Engine mit der Startseite (anders als die standalone `fahrerwohl.html`). Bietet ein bereinigtes Public-PDF zum Download (`public/eunavia-datenschutz-konzept.pdf` / `eunavia-privacy-concept.pdf`), Quelle in `whitepaper/`.
 
 ### Zentrale Konventionen (wichtig vor dem Editieren)
 
@@ -65,9 +65,9 @@ Vite 7 (Multi-Page: `index.html` + `fahrerwohl.html`) + Vanilla HTML/CSS/JS. Que
 
 ## Deployment
 
-Vercel (`vercel.json`: framework `vite`, SPA-Rewrite aller Routen auf `/index.html`). Domains: **eunavia.com** (Englisch) / **eunavia.de** (Deutsch) — dieselbe Codebase auf beiden Domains; die Sprache hängt allein an der Domain.
+Vercel (`vercel.json`: framework `vite`). Rewrites: `/fahrerwohl` → `/fahrerwohl.html`, `/datenschutz` → `/datenschutz.html`, alle übrigen Routen auf `/index.html` (Reihenfolge zählt — saubere Routen **vor** dem Catch-all). Domains: **eunavia.com** (Englisch) / **eunavia.de** (Deutsch) — dieselbe Codebase auf beiden Domains; die Sprache hängt **allein an der Domain**.
 
-**Geo-Routing** über `middleware.js` (Vercel Routing Middleware, Edge, `@vercel/functions`): leitet Besucher beim Einstieg (`matcher: ['/', '/fahrerwohl']`) anhand `geolocation().country` auf die passende Domain — deutschsprachige Länder (DE/AT/CH/LI) → `eunavia.de`, alle übrigen → `eunavia.com`. Ein Cookie `eunavia_geo` verhindert Endlosschleifen und respektiert manuelle Domain-Wahl (eine Umleitung pro Domain, dann nie wieder).
+**Kein Geo-Routing.** `.de` ist immer Deutsch, `.com` immer Englisch — unabhängig vom Standort des Besuchers. Es gibt **keine** standortbasierte Umleitung (kein `middleware.js`, keine `@vercel/functions`-Abhängigkeit). Wer eine bestimmte Sprache will, ruft die passende Domain auf; zum Testen erzwingbar mit `?lang=en` / `?lang=de`.
 
 Produkte verlinken auf eigene Subdomains (`stopsmoking.eunavia.de`, `klar.eunavia.de`, `leben.eunavia.de`) bzw. `cyberschooling.eu`.
 
