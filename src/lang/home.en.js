@@ -88,8 +88,15 @@ export const homeEN = {
   'p3.li3': 'Accompanies rather than lectures',
   'p3.link': 'Become smoke-free <span>→</span>',
 
-  // 04 · Klar (Eigenname bleibt)
-  'p4.alt': 'Klar – support for letting go of alcohol',
+  // Produkt-Markennamen & Links (sprachabhängig: .com nutzt EN-Namen + .com-Subdomains)
+  'brand.klar': 'Clear',
+  'brand.leben': 'Life',
+  'url.stopsmoking': 'https://stopsmoking.eunavia.com/',
+  'url.klar': 'https://clear.eunavia.com/',
+  'url.leben': 'https://life.eunavia.com/welcome',
+
+  // 04 · Clear (Klar)
+  'p4.alt': 'Clear – support for letting go of alcohol',
   'p4.cat': 'Alcohol · self-help',
   'p4.desc':
     'Become free. And stay free. Klar accompanies you on the way to a life without alcohol — calm, anonymous and right there when it gets hard. No pressure, no shame.',
@@ -98,14 +105,14 @@ export const homeEN = {
   'p4.li3': 'At your own pace',
   'p4.link': 'Get clear <span>→</span>',
 
-  // 05 · Leben (Eigenname bleibt)
-  'p5.alt': 'Leben – platform for quality of life',
+  // 05 · Life (Leben)
+  'p5.alt': 'Life – platform for quality of life',
   'p5.desc':
     'Your life, stabilized step by step. A calm, integrated companion for wellbeing, education and life stability — small levers with great effect.',
   'p5.li1': 'Wellbeing, education & stability',
   'p5.li2': 'Small levers, great effect',
   'p5.li3': 'Gentle & integrated',
-  'p5.link': 'Discover Leben <span>→</span>',
+  'p5.link': 'Discover Life <span>→</span>',
 
   // Kennzahlen
   'stats.reach': 'targeted global reach',

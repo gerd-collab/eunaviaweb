@@ -107,4 +107,11 @@ export const datenschutzEN = {
   'footer.products': 'Products',
   'footer.worksheets': 'Worksheets',
   'footer.company': 'Company',
+
+  // Produkt-Markennamen & Links (sprachabhängig: .com nutzt EN-Namen + .com-Subdomains)
+  'brand.klar': 'Clear',
+  'brand.leben': 'Life',
+  'url.stopsmoking': 'https://stopsmoking.eunavia.com/',
+  'url.klar': 'https://clear.eunavia.com/',
+  'url.leben': 'https://life.eunavia.com/welcome',
 }
