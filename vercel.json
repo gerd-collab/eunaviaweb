@@ -5,6 +5,7 @@
   "outputDirectory": "dist",
   "rewrites": [
     { "source": "/fahrerwohl", "destination": "/fahrerwohl.html" },
+    { "source": "/datenschutz", "destination": "/datenschutz.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
