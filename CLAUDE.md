@@ -10,6 +10,8 @@ Statische Marketing-One-Pager-Website der **Dachmarke Eunavia** ("Human Centered
 
 > Wording: Eunavia ist aktuell ein Ein-Personen-Unternehmen. Das Wort **„Konzern" bewusst nicht** in der Außendarstellung verwenden — ein Konzern zu werden ist das _Ziel_, nicht der Status. Im Public-Copy „Unternehmen" / „Dachmarke" statt „Konzern".
 
+> **Wording: nicht-medizinische Positionierung (Wellness-Pfad).** Die Apps (besonders KLAR & StopSmoking/Rauchfrei) sind bewusst **Selbsthilfe- und Begleit-Apps aus dem Bereich Lebensstil & Wohlbefinden — kein Medizinprodukt, keine DiGA**. In der Außendarstellung **verboten**: „Medizinprodukt", „digitale Gesundheitsanwendung/DiGA", „Gesundheits-App" (als Produktkategorie), „verhaltenstherapeutisch/Therapie", „Sucht(-frei)", „(Alkohol-)Entzug", „Diagnose/Heilung/Behandlung", sowie Pflicht-Zertifizierungen für Medizinprodukte (**BSI TR-03161, ISO 27001, Wirksamkeitsstudie**). **Erlaubt**: „Selbsthilfe", „Begleitung", „Wohlbefinden", „Rauchstopp", „bewährte (Selbsthilfe-)Methoden", freiwillige Belege (DSGVO-Konformität, Penetrationstest/OWASP-MASVS, optionales TÜV-/ePrivacy-Siegel). **Datenkategorie** „Gesundheitsdaten" (Art. 9 DSGVO, Split-Identity-Tresor) bleibt erlaubt — das ist Datenschutz, kein Produkt-Claim. Funktion und Wording müssen zusammenpassen; Rechtstexte vor Veröffentlichung durch Fachjurist:in prüfen lassen.
+
 Markenarchitektur: Eunavia (Dach) → zwei Säulen **Cyberschooling** (Bildung) und **Vivanova** (Gesundheit, _nur Arbeitstitel, nicht final_).
 
 ## Commands

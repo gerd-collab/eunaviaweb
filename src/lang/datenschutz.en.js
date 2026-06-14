@@ -64,7 +64,7 @@ export const datenschutzEN = {
     'Zero ad networks, zero third-party analytics. We do not sell your data and we do not pass it on. Our business is your recovery — not your attention.',
   'ds.p8.h': 'Independently verifiable',
   'ds.p8.p':
-    'Trust you can verify: once we are on the market, we will have our apps independently certified — from the TÜV quality seal to the strict security standards for digital health applications.',
+    'Trust you can verify: we lay our protection architecture open and rely on voluntary, independent security audits and data-protection seals — not on promises alone.',
 
   // Split-Identity
   'ds.split.eyebrow': 'How it works',
@@ -93,26 +93,8 @@ export const datenschutzEN = {
   'ds.never.4': 'Force you to provide an email address or a login.',
   'ds.never.5': 'Make life-saving help depend on an internet connection.',
 
-  // Certification
-  'ds.cert.eyebrow': 'Verifiable',
-  'ds.cert.title': 'Trust you can <em>verify.</em>',
-  'ds.cert.lead':
-    'We don’t just want to say your data is safe — we will have it independently confirmed. These are the seals and standards we are aligning our health apps with.',
-  'ds.cert1.kicker': 'Quality seal',
-  'ds.cert1.name': 'TÜV-certified app',
-  'ds.cert1.p':
-    'A manufacturer-independent seal that checks usability, legal compliance and data security — the same mark of approval you know from trusted brands.',
-  'ds.cert2.kicker': 'Security standard',
-  'ds.cert2.name': 'BSI TR-03161',
-  'ds.cert2.p':
-    'The technical guideline of Germany’s Federal Office for Information Security for health apps — the benchmark for app, server and data transfer.',
-  'ds.cert3.kicker': 'Information security',
-  'ds.cert3.name': 'ISO 27001',
-  'ds.cert3.p':
-    'The international standard for well-considered information-security management — clear rules and responsibilities in how data is handled.',
-  'ds.cert.note':
-    'Eunavia is still in the prototype phase and not yet on the market — the checks and certifications mentioned here have therefore not yet taken place. We build privacy in from the very first line of code and will pursue the certifications step by step once we launch — starting where the data is most sensitive.',
-  'ds.cert.download': 'Read the full concept as a PDF ↓',
+  // PDF download
+  'ds.pdf.download': 'Read the full concept as a PDF ↓',
 
   // CTA
   'ds.cta.title': 'Questions about your data?',

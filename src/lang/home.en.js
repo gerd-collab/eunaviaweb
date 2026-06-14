@@ -38,9 +38,9 @@ export const homeEN = {
   // Laufband
   'marquee':
     '<span>Learning</span><i>✦</i><span>Movement</span><i>✦</i><span>Changing habits</span><i>✦</i>' +
-    '<span>Becoming addiction-free</span><i>✦</i><span>Quality of Life</span><i>✦</i><span>Prevention</span><i>✦</i>' +
+    '<span>Living mindfully</span><i>✦</i><span>Quality of Life</span><i>✦</i><span>Prevention</span><i>✦</i>' +
     '<span>Learning</span><i>✦</i><span>Movement</span><i>✦</i><span>Changing habits</span><i>✦</i>' +
-    '<span>Becoming addiction-free</span><i>✦</i><span>Quality of Life</span><i>✦</i><span>Prevention</span><i>✦</i>',
+    '<span>Living mindfully</span><i>✦</i><span>Quality of Life</span><i>✦</i><span>Prevention</span><i>✦</i>',
 
   // Manifest / Philosophie
   'manifest.eyebrow': 'Philosophy',
@@ -70,7 +70,7 @@ export const homeEN = {
 
   // 02 · Fahrerwohl (Eigenname bleibt)
   'p2.alt': 'Fahrerwohl – wellbeing app for professional drivers',
-  'p2.cat': 'Workplace health',
+  'p2.cat': 'Workplace wellbeing',
   'p2.desc':
     'Eight hours behind the wheel — and still looking after yourself. Voice-guided micro-exercises for professional drivers during breaks: breathing, movement, eyes and nutrition. Wellbeing that fits in the cab.',
   'p2.li1': 'Voice-based during the break',
@@ -79,30 +79,30 @@ export const homeEN = {
   'p2.link': 'View Fahrerwohl <span>→</span>',
 
   // 03 · StopSmoking (Eigenname bleibt)
-  'p3.alt': 'StopSmoking – behavioral-therapy smoking cessation',
-  'p3.cat': 'Smoking cessation',
+  'p3.alt': 'StopSmoking – self-help for quitting smoking',
+  'p3.cat': 'Quitting smoking · self-help',
   'p3.desc':
-    "You don't have to do this alone. Behavioral-therapy-based support for quitting smoking — instant help in the right moment, honest and without wagging a finger.",
-  'p3.li1': 'Behavioral-therapy approach',
+    "You don't have to do this alone. Support for quitting smoking built on proven self-help methods — instant help in the right moment, honest and without wagging a finger.",
+  'p3.li1': 'Proven self-help methods',
   'p3.li2': 'Instant help for acute cravings',
   'p3.li3': 'Accompanies rather than lectures',
   'p3.link': 'Become smoke-free <span>→</span>',
 
   // 04 · Klar (Eigenname bleibt)
   'p4.alt': 'Klar – support for letting go of alcohol',
-  'p4.cat': 'Alcohol recovery',
+  'p4.cat': 'Alcohol · self-help',
   'p4.desc':
     'Become free. And stay free. Klar accompanies you on the way to a life without alcohol — calm, anonymous and right there when it gets hard. No pressure, no shame.',
   'p4.li1': 'Anonymous & in everyday life',
-  'p4.li2': 'Instant relapse help',
+  'p4.li2': 'Instant help when it gets hard',
   'p4.li3': 'At your own pace',
   'p4.link': 'Get clear <span>→</span>',
 
   // 05 · Leben (Eigenname bleibt)
   'p5.alt': 'Leben – platform for quality of life',
   'p5.desc':
-    'Your life, stabilized step by step. A calm, integrated companion for health, education and life stability — small levers with great effect.',
-  'p5.li1': 'Health, education & stability',
+    'Your life, stabilized step by step. A calm, integrated companion for wellbeing, education and life stability — small levers with great effect.',
+  'p5.li1': 'Wellbeing, education & stability',
   'p5.li2': 'Small levers, great effect',
   'p5.li3': 'Gentle & integrated',
   'p5.link': 'Discover Leben <span>→</span>',
