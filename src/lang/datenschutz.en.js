@@ -15,6 +15,8 @@ export const datenschutzEN = {
 
   // Skip-Link & Navigation (shared keys with the homepage)
   'skip': 'Skip to content',
+  'ds.aria.brandHome': 'Eunavia – Human Centered, home',
+  'ds.aria.mainNav': 'Main navigation',
   'nav.philosophy': 'Philosophy',
   'nav.products': 'Products',
   'nav.principles': 'Principles',
@@ -60,9 +62,9 @@ export const datenschutzEN = {
   'ds.p7.h': 'No data trade, no trackers',
   'ds.p7.p':
     'Zero ad networks, zero third-party analytics. We do not sell your data and we do not pass it on. Our business is your recovery — not your attention.',
-  'ds.p8.h': 'Independently audited',
+  'ds.p8.h': 'Independently verifiable',
   'ds.p8.p':
-    'Trust you can verify: we have our apps independently certified — from the TÜV quality seal to the strict security standards for digital health applications.',
+    'Trust you can verify: once we are on the market, we will have our apps independently certified — from the TÜV quality seal to the strict security standards for digital health applications.',
 
   // Split-Identity
   'ds.split.eyebrow': 'How it works',
@@ -73,6 +75,7 @@ export const datenschutzEN = {
   'ds.split.vault1.name': 'Who you are',
   'ds.split.vault1.p':
     'Knows — if anything at all — only an anonymous way in, such as your device’s fingerprint or face unlock. <strong>No health data.</strong> No name, no email needed.',
+  'ds.split.token.chip': 'anonymous tag',
   'ds.split.token': 'links the two — reveals nothing alone',
   'ds.split.vault2.tag': 'Health vault',
   'ds.split.vault2.name': 'What you record',
@@ -94,7 +97,7 @@ export const datenschutzEN = {
   'ds.cert.eyebrow': 'Verifiable',
   'ds.cert.title': 'Trust you can <em>verify.</em>',
   'ds.cert.lead':
-    'We don’t just want to say your data is safe — we have it independently confirmed. These are the seals and standards we align our health apps with.',
+    'We don’t just want to say your data is safe — we will have it independently confirmed. These are the seals and standards we are aligning our health apps with.',
   'ds.cert1.kicker': 'Quality seal',
   'ds.cert1.name': 'TÜV-certified app',
   'ds.cert1.p':
@@ -108,7 +111,7 @@ export const datenschutzEN = {
   'ds.cert3.p':
     'The international standard for well-considered information-security management — clear rules and responsibilities in how data is handled.',
   'ds.cert.note':
-    'Eunavia is at the beginning of this journey. We build privacy in from the very first line of code and pursue the certifications step by step — starting where the data is most sensitive.',
+    'Eunavia is still in the prototype phase and not yet on the market — the checks and certifications mentioned here have therefore not yet taken place. We build privacy in from the very first line of code and will pursue the certifications step by step once we launch — starting where the data is most sensitive.',
   'ds.cert.download': 'Read the full concept as a PDF ↓',
 
   // CTA

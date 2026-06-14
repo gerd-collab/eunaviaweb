@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" data-i18n-content="ds.meta.desc" content="Datenschutz bei Eunavia – verständlich erklärt. Anonym von Anfang an, Daten auf deinem Gerät, getrennte Tresore, kein Datenhandel. Vertrauen, das man nachprüfen kann." />
     <meta name="theme-color" content="#07110D" />
-    <meta property="og:title" content="Datenschutz – Eunavia" />
+    <meta property="og:title" data-i18n-content="ds.meta.title" content="Datenschutz – Eunavia" />
     <meta property="og:description" data-i18n-content="ds.meta.ogDesc" content="Wie Eunavia deine sensibelsten Daten schützt: anonym, verschlüsselt, auf deinem Gerät – und unabhängig prüfbar." />
     <meta property="og:type" content="website" />
 
@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-    <title>Datenschutz – Eunavia</title>
+    <title data-i18n="ds.meta.title">Datenschutz – Eunavia</title>
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="skip">Zum Inhalt springen</a>
@@ -32,14 +32,14 @@
 
     <header class="site-header" id="top">
       <div class="container nav">
-        <a class="brand brand--lockup" href="/" aria-label="Eunavia – Human Centered, Startseite">
+        <a class="brand brand--lockup" href="/" data-i18n-label="ds.aria.brandHome" aria-label="Eunavia – Human Centered, Startseite">
           <img class="brand__mark" src="/logo-mark.svg" alt="" width="42" height="42" />
           <span class="brand__text">
             <span class="brand__word" data-brand="name">Eunavia</span>
             <span class="brand__tagline" data-brand="tagline">Human Centered</span>
           </span>
         </a>
-        <nav class="nav__links" aria-label="Hauptnavigation">
+        <nav class="nav__links" data-i18n-label="ds.aria.mainNav" aria-label="Hauptnavigation">
           <a href="/#philosophie" data-i18n="nav.philosophy">Philosophie</a>
           <a href="/#produkte" data-i18n="nav.products">Produkte</a>
           <a href="/#prinzipien" data-i18n="nav.principles">Prinzipien</a>
@@ -134,8 +134,8 @@
             </article>
             <article class="principle reveal">
               <span class="principle__idx">viii</span>
-              <h3 data-i18n="ds.p8.h">Unabhängig geprüft</h3>
-              <p data-i18n="ds.p8.p">Vertrauen, das man nachprüfen kann: Wir lassen unsere Apps unabhängig zertifizieren — vom TÜV-Gütesiegel bis zu den strengen Sicherheitsstandards für digitale Gesundheitsanwendungen.</p>
+              <h3 data-i18n="ds.p8.h">Unabhängig prüfbar</h3>
+              <p data-i18n="ds.p8.p">Vertrauen, das man nachprüfen kann: Sobald wir am Markt sind, werden wir unsere Apps unabhängig zertifizieren lassen — vom TÜV-Gütesiegel bis zu den strengen Sicherheitsstandards für digitale Gesundheitsanwendungen.</p>
             </article>
           </div>
         </div>
@@ -160,7 +160,7 @@
             </div>
             <div class="vault__token" aria-hidden="true">
               <span class="vault__token-rule"></span>
-              <span class="vault__token-chip">anonymes&nbsp;Kürzel</span>
+              <span class="vault__token-chip" data-i18n="ds.split.token.chip">anonymes&nbsp;Kürzel</span>
               <span class="vault__token-label" data-i18n="ds.split.token">verbindet beide — verrät allein nichts</span>
               <span class="vault__token-rule"></span>
             </div>
@@ -202,8 +202,8 @@
           <p class="eyebrow reveal" data-i18n="ds.cert.eyebrow">Nachprüfbar</p>
           <h2 class="display reveal" data-i18n="ds.cert.title">Vertrauen, das man <em>prüfen</em> kann.</h2>
           <p class="lead reveal" data-i18n="ds.cert.lead">
-            Wir möchten nicht nur sagen, dass deine Daten sicher sind — wir lassen es
-            unabhängig bestätigen. Das sind die Siegel und Standards, auf die wir
+            Wir möchten nicht nur sagen, dass deine Daten sicher sind — wir werden es
+            unabhängig bestätigen lassen. Das sind die Siegel und Standards, auf die wir
             unsere Gesundheits-Apps ausrichten.
           </p>
           <div class="cert-grid reveal">
@@ -227,9 +227,11 @@
             </article>
           </div>
           <p class="cert-disclaimer reveal" data-i18n="ds.cert.note">
-            Eunavia steht am Anfang dieses Weges. Wir bauen Datenschutz von der ersten
-            Codezeile an ein und gehen die Zertifizierungen Schritt für Schritt an —
-            zuerst dort, wo die Daten am sensibelsten sind.
+            Eunavia ist noch in der Prototyp-Phase und nicht am Markt — die hier
+            genannten Prüfungen und Zertifizierungen sind deshalb noch nicht erfolgt.
+            Wir bauen Datenschutz von der ersten Codezeile an ein und werden die
+            Zertifizierungen Schritt für Schritt angehen, sobald wir starten — zuerst
+            dort, wo die Daten am sensibelsten sind.
           </p>
           <div class="cert-download reveal">
             <a class="btn btn--ghost" id="pdfDownload" href="/eunavia-datenschutz-konzept.pdf" download data-i18n="ds.cert.download">
@@ -264,7 +266,7 @@
           </a>
           <p class="footer__claim" data-brand="claim" data-i18n="footer.claim">Der gute Weg zum gelingenden Leben.</p>
         </div>
-        <nav class="footer__col" aria-label="Produkte">
+        <nav class="footer__col" data-i18n-label="footer.products" aria-label="Produkte">
           <h4 data-i18n="footer.products">Produkte</h4>
           <a href="https://www.cyberschooling.eu/" target="_blank" rel="noopener" data-i18n="footer.worksheets">Arbeitsblätter</a>
           <a href="/fahrerwohl">Fahrerwohl</a>
@@ -272,7 +274,7 @@
           <a href="https://klar.eunavia.de/" target="_blank" rel="noopener">Klar</a>
           <a href="https://leben.eunavia.de/welcome" target="_blank" rel="noopener">Leben</a>
         </nav>
-        <nav class="footer__col" aria-label="Unternehmen">
+        <nav class="footer__col" data-i18n-label="footer.company" aria-label="Unternehmen">
           <h4 data-i18n="footer.company">Unternehmen</h4>
           <a href="/#philosophie" data-i18n="nav.philosophy">Philosophie</a>
           <a href="/#produkte" data-i18n="nav.products">Produkte</a>
