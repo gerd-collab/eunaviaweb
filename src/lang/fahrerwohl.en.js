@@ -41,6 +41,12 @@ export const fahrerwohlEN = {
   'fw.hero.imgAlt':
     'Fahrerwohl app: home screen with shift time, quick break selection and mood check',
 
+  // Store-Verfügbarkeit (Android / iOS)
+  'fw.store.android':
+    '<svg viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M47 32C37 37 31 47 31 60v392c0 13 6 23 16 28l228-224L47 32zm301 196L92 4l278 158-22 66zm74 42-62-36-58 58 58 58 62-36c20-12 20-32 0-44zM92 508l256-224 22 66L92 508z"/></svg> Get it on Android',
+  'fw.store.ios':
+    '<svg viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268c-.4-44 19.9-77.1 60.9-101.5-22.9-32.9-57.6-51-103.4-54.5-43.4-3.4-90.9 25.5-108.3 25.5-18.4 0-60.4-24.3-93.4-24.3C24.5 114 0 168.6 0 233.4c0 32.5 6 66 17.9 100.6 16 45.4 73.7 156.6 133.9 154.7 31.5-.7 53.7-22.3 94.7-22.3 39.8 0 60.4 22.3 93.4 22.3 60.7-.9 113-101.9 128.3-147.4-81.4-38.4-77.4-112.4-77.4-114.6zM256 84c30.9-36.6 28.1-69.9 27.2-81.9-27.3 1.6-58.9 18.6-76.9 39.6-19.8 22.5-31.5 50.3-29 80.8 29.5 2.3 56.4-12.9 78.7-38.5z"/></svg> iOS app in preparation',
+
   // Evidenz
   'fw.ev.kicker': 'Why this app is needed',
   'fw.ev.h2': "The driver's seat is a health risk.",
@@ -175,6 +181,16 @@ export const fahrerwohlEN = {
   'fw.final.lead':
     "The full concept — scientific basis, feature analysis, UI concept and list of sources — is available as a PDF. For questions, pilot projects or feedback, we'd love to hear from you.",
   'fw.final.cta1': 'Download the concept PDF',
+
+  // Beta-Tester-Anmeldung
+  'fw.beta.kicker': 'Beta test',
+  'fw.beta.h2': 'Become a test driver.',
+  'fw.beta.lead':
+    'Fahrerwohl is currently in beta for <strong>Android</strong>. Sign up — ' +
+    "we'll approve you and get in touch by email as soon as it's ready.",
+  'fw.beta.email': 'Your email',
+  'fw.beta.name': 'Name (optional)',
+  'fw.beta.submit': 'Sign up as a tester',
 
   // Footer
   'fw.footer.legal': '© 2026 Eunavia · Fahrerwohl is a concept draft (research preview).',

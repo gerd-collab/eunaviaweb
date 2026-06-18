@@ -18,6 +18,7 @@
      • data-i18n-title="key"      → ersetzt das title-Attribut
      • data-i18n-content="key"    → ersetzt content (Meta-Tags)
      • data-i18n-href="key"       → ersetzt href (sprachabhängige externe Links)
+     • data-i18n-placeholder="key"→ ersetzt placeholder (Formularfelder)
    ============================================================ */
 
 const ATTR_MAP = {
@@ -26,6 +27,7 @@ const ATTR_MAP = {
   'data-i18n-title': 'title',
   'data-i18n-content': 'content',
   'data-i18n-href': 'href',
+  'data-i18n-placeholder': 'placeholder',
 }
 
 /**
