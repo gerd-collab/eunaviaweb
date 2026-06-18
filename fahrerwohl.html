@@ -774,37 +774,63 @@
 
     .fw-final .fw-cta-row { justify-content: center; margin-bottom: 0; }
 
-    /* ---------- Store-Verfügbarkeit (Android / iOS) ---------- */
-    .fw-store-row {
+    /* ---------- Plattform-Verfügbarkeit (Android / iOS) ---------- */
+    .fw-platforms {
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
+      align-items: stretch;
       gap: 0.7rem;
-      margin-bottom: 1.1rem;
+      margin-bottom: 1rem;
     }
 
-    .fw-final .fw-store-row { justify-content: center; }
+    .fw-final .fw-platforms { justify-content: center; }
 
-    .fw-btn-play { padding-left: 1.4rem; }
-
-    .fw-btn-play svg { width: 19px; height: 19px; flex-shrink: 0; }
-
-    .fw-soon {
+    .fw-platform {
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      font-family: var(--fw-body);
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: var(--fw-muted);
-      border: 1px dashed rgba(255, 255, 255, 0.22);
-      border-radius: 999px;
-      padding: 0.8rem 1.5rem;
+      gap: 0.7rem;
+      border: 1px solid var(--fw-line);
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 14px;
+      padding: 0.7rem 1.1rem;
       cursor: default;
       user-select: none;
     }
 
-    .fw-soon svg { width: 17px; height: 17px; opacity: 0.7; flex-shrink: 0; }
+    .fw-platform svg { width: 24px; height: 24px; flex-shrink: 0; color: var(--fw-text); }
+
+    .fw-platform-live svg { color: var(--fw-amber); }
+
+    .fw-platform-txt { display: flex; flex-direction: column; line-height: 1.2; text-align: left; }
+
+    .fw-platform-txt b {
+      font-family: var(--fw-display);
+      font-weight: 700;
+      font-size: 1.02rem;
+      letter-spacing: 0.01em;
+    }
+
+    .fw-platform-txt small { font-size: 0.78rem; color: var(--fw-muted); }
+
+    .fw-platform-live .fw-platform-txt small { color: var(--fw-amber); }
+
+    .fw-platform-hint {
+      font-size: 0.95rem;
+      color: var(--fw-muted);
+      margin-bottom: 2.2rem;
+    }
+
+    .fw-platform-hint a {
+      color: var(--fw-amber);
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(246, 169, 59, 0.4);
+      transition: border-color 0.2s;
+    }
+
+    .fw-platform-hint a:hover { border-color: var(--fw-amber); }
+
+    .fw-final .fw-platform-hint { margin-bottom: 0; }
 
     /* ---------- Beta-Tester-Anmeldung ---------- */
     .fw-beta {
@@ -986,16 +1012,19 @@
           <strong>sprachgeführt während der Fahrt, vollwertig in der Pause.</strong>
           Jede Funktion ist an einen wissenschaftlich belegten Wirkmechanismus gekoppelt.
         </p>
-        <div class="fw-store-row reveal" style="--reveal-delay:.14s">
-          <a class="fw-btn fw-btn-amber fw-btn-play" href="https://play.google.com/store/apps/details?id=com.eunavia.fahrerwohl" target="_blank" rel="noopener" data-i18n="fw.store.android">
-            <svg viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M47 32C37 37 31 47 31 60v392c0 13 6 23 16 28l228-224L47 32zm301 196L92 4l278 158-22 66zm74 42-62-36-58 58 58 58 62-36c20-12 20-32 0-44zM92 508l256-224 22 66L92 508z"/></svg>
-            Jetzt für Android laden
-          </a>
-          <span class="fw-soon" data-i18n="fw.store.ios">
+        <div class="fw-platforms reveal" style="--reveal-delay:.14s">
+          <span class="fw-platform fw-platform-live">
+            <svg viewBox="0 0 576 512" fill="currentColor" aria-hidden="true"><path d="M420.6 301.9a24 24 0 1 1 24-24 24 24 0 0 1-24 24m-265.1 0a24 24 0 1 1 24-24 24 24 0 0 1-24 24m273.7-144.5 47.9-83a10 10 0 1 0-17.3-10l-48.5 84.1a301.3 301.3 0 0 0-246.6 0L116.2 64.5a10 10 0 1 0-17.3 10l47.9 83C64.5 202.2 8.2 285.6 0 384h576c-8.2-98.4-64.5-181.8-146.8-226.6"/></svg>
+            <span class="fw-platform-txt"><b>Android</b><small data-i18n="fw.plat.android">in der Testentwicklung</small></span>
+          </span>
+          <span class="fw-platform">
             <svg viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268c-.4-44 19.9-77.1 60.9-101.5-22.9-32.9-57.6-51-103.4-54.5-43.4-3.4-90.9 25.5-108.3 25.5-18.4 0-60.4-24.3-93.4-24.3C24.5 114 0 168.6 0 233.4c0 32.5 6 66 17.9 100.6 16 45.4 73.7 156.6 133.9 154.7 31.5-.7 53.7-22.3 94.7-22.3 39.8 0 60.4 22.3 93.4 22.3 60.7-.9 113-101.9 128.3-147.4-81.4-38.4-77.4-112.4-77.4-114.6zM256 84c30.9-36.6 28.1-69.9 27.2-81.9-27.3 1.6-58.9 18.6-76.9 39.6-19.8 22.5-31.5 50.3-29 80.8 29.5 2.3 56.4-12.9 78.7-38.5z"/></svg>
-            iOS-App in Vorbereitung
+            <span class="fw-platform-txt"><b>iOS</b><small data-i18n="fw.plat.ios">in Vorbereitung</small></span>
           </span>
         </div>
+        <p class="fw-platform-hint reveal" style="--reveal-delay:.16s" data-i18n="fw.plat.hint">
+          Android-App testen? <a href="#beta">Jetzt per E-Mail zur Beta anmelden ↓</a>
+        </p>
         <div class="fw-cta-row reveal" style="--reveal-delay:.18s">
           <a class="fw-btn fw-btn-ghost" href="#video" data-i18n="fw.hero.cta1">▶&#xFE0E;&nbsp;Live im Fahrzeug ansehen</a>
           <a class="fw-btn fw-btn-ghost" href="/fahrerwohl/Fahrer-Wellbeing-App_Konzept.pdf" download data-i18n="fw.hero.cta2">Konzept als PDF laden</a>
@@ -1287,16 +1316,19 @@
         Das vollständige Konzept — wissenschaftliche Grundlagen, Funktionsanalyse, UI-Konzept und Quellenverzeichnis —
         gibt es als PDF. Für Fragen, Pilotprojekte oder Feedback freuen wir uns über eine Nachricht.
       </p>
-      <div class="fw-store-row reveal" style="--reveal-delay:.13s">
-        <a class="fw-btn fw-btn-amber fw-btn-play" href="https://play.google.com/store/apps/details?id=com.eunavia.fahrerwohl" target="_blank" rel="noopener" data-i18n="fw.store.android">
-          <svg viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M47 32C37 37 31 47 31 60v392c0 13 6 23 16 28l228-224L47 32zm301 196L92 4l278 158-22 66zm74 42-62-36-58 58 58 58 62-36c20-12 20-32 0-44zM92 508l256-224 22 66L92 508z"/></svg>
-          Jetzt für Android laden
-        </a>
-        <span class="fw-soon" data-i18n="fw.store.ios">
+      <div class="fw-platforms reveal" style="--reveal-delay:.13s">
+        <span class="fw-platform fw-platform-live">
+          <svg viewBox="0 0 576 512" fill="currentColor" aria-hidden="true"><path d="M420.6 301.9a24 24 0 1 1 24-24 24 24 0 0 1-24 24m-265.1 0a24 24 0 1 1 24-24 24 24 0 0 1-24 24m273.7-144.5 47.9-83a10 10 0 1 0-17.3-10l-48.5 84.1a301.3 301.3 0 0 0-246.6 0L116.2 64.5a10 10 0 1 0-17.3 10l47.9 83C64.5 202.2 8.2 285.6 0 384h576c-8.2-98.4-64.5-181.8-146.8-226.6"/></svg>
+          <span class="fw-platform-txt"><b>Android</b><small data-i18n="fw.plat.android">in der Testentwicklung</small></span>
+        </span>
+        <span class="fw-platform">
           <svg viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268c-.4-44 19.9-77.1 60.9-101.5-22.9-32.9-57.6-51-103.4-54.5-43.4-3.4-90.9 25.5-108.3 25.5-18.4 0-60.4-24.3-93.4-24.3C24.5 114 0 168.6 0 233.4c0 32.5 6 66 17.9 100.6 16 45.4 73.7 156.6 133.9 154.7 31.5-.7 53.7-22.3 94.7-22.3 39.8 0 60.4 22.3 93.4 22.3 60.7-.9 113-101.9 128.3-147.4-81.4-38.4-77.4-112.4-77.4-114.6zM256 84c30.9-36.6 28.1-69.9 27.2-81.9-27.3 1.6-58.9 18.6-76.9 39.6-19.8 22.5-31.5 50.3-29 80.8 29.5 2.3 56.4-12.9 78.7-38.5z"/></svg>
-          iOS-App in Vorbereitung
+          <span class="fw-platform-txt"><b>iOS</b><small data-i18n="fw.plat.ios">in Vorbereitung</small></span>
         </span>
       </div>
+      <p class="fw-platform-hint reveal" style="--reveal-delay:.14s" data-i18n="fw.plat.hint">
+        Android-App testen? <a href="#beta">Jetzt per E-Mail zur Beta anmelden ↓</a>
+      </p>
       <div class="fw-cta-row reveal" style="--reveal-delay:.15s">
         <a class="fw-btn fw-btn-ghost" href="/fahrerwohl/Fahrer-Wellbeing-App_Konzept.pdf" download data-i18n="fw.final.cta1">Konzept-PDF herunterladen</a>
         <a class="fw-btn fw-btn-ghost" href="mailto:gerd.wenning@gmail.com?subject=Fahrerwohl">gerd.wenning@gmail.com</a>
@@ -1311,8 +1343,8 @@
         <p class="fw-kicker" data-i18n="fw.beta.kicker">Beta-Test</p>
         <h2 data-i18n="fw.beta.h2">Werde Test­fahrer:in.</h2>
         <p class="fw-beta-lead" data-i18n="fw.beta.lead">
-          Fahrerwohl ist aktuell für <strong>Android</strong> in der Beta. Trag dich ein —
-          wir schalten dich frei und melden uns per E-Mail, sobald es losgeht.
+          Fahrerwohl ist aktuell für <strong>Android</strong> in der Testentwicklung. Trag dich mit deiner
+          E-Mail ein — wir schalten dich frei, dann kannst du die App als Erste:r testen. iOS folgt.
         </p>
         <form class="fw-beta-form" id="beta-form" novalidate>
           <input type="email" name="email" autocomplete="email" required
